@@ -2,7 +2,17 @@
   width: 100%;
   padding: 0px 16px;
 }
-
+button {
+  background-color: $txt-color;
+  color: $main-color;
+  padding: 17px 65px;
+  border: none;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
 h1 {
   // color:  #0A224A;
   color: $txt-color;
@@ -90,7 +100,7 @@ span {
     width: 1320px;
     padding: 0;
   }
-  .cont--small{
+  .cont--small {
     width: 1096px;
     padding: 0;
   }
