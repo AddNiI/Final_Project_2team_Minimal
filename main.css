@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-.cont {
+.container {
+  margin: 0 auto;
   width: 100%;
   padding: 0px 16px;
 }
@@ -14,9 +15,8 @@ button {
   color: #fff;
   padding: 17px 65px;
   border: none;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
@@ -25,7 +25,6 @@ h1 {
   color: #0a224a;
   font-family: Playfair Display;
   font-size: 28px;
-  font-style: normal;
   font-weight: 400;
   line-height: 42px;
   text-transform: uppercase;
@@ -33,9 +32,8 @@ h1 {
 
 h2 {
   color: #0a224a;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
   line-height: 45px;
   text-transform: uppercase;
@@ -43,20 +41,9 @@ h2 {
 
 h3 {
   color: #0a224a;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-  text-transform: uppercase;
-}
-
-h4 {
-  color: #0a224a;
   text-align: center;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   opacity: 0.8;
@@ -64,25 +51,14 @@ h4 {
 
 p {
   color: #0a224a;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-
-span {
-  color: #0a224a;
-  color: #0a224a;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 @media (min-width: 768px) {
-  .cont {
+  .container {
     padding: 0 32px;
   }
   h1 {
@@ -93,9 +69,6 @@ span {
     line-height: 45px;
   }
   h3 {
-    line-height: 27px;
-  }
-  h4 {
     font-size: 16px;
     line-height: 24px;
   }
@@ -105,11 +78,11 @@ span {
   }
 }
 @media (min-width: 1440px) {
-  .cont {
+  .container {
     width: 1320px;
     padding: 0;
   }
-  .cont--small {
+  .container--small {
     width: 1096px;
     padding: 0;
   }
