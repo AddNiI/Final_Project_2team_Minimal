@@ -3,6 +3,10 @@
   padding: 0px 16px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 h1 {
   color: #0a224a;
   font-family: Playfair Display;

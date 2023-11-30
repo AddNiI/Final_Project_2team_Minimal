@@ -2,7 +2,9 @@
   width: 100%;
   padding: 0px 16px;
 }
-
+.no-scroll{
+  overflow: hidden;
+}
 h1 {
   // color:  #0A224A;
   color: $txt-color;
