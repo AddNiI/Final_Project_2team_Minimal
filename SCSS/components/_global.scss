@@ -46,7 +46,7 @@ h4 {
   line-height: 18px;
   opacity: 0.8;
 }
-p {
+p  {
   // color: #0A224A;
   color: $txt-color;
   font-family: Roboto;
@@ -87,8 +87,8 @@ span {
     line-height: 27;
   }
 }
-@media (min-width: 1440px) {
-  .cont {
+@media (min-width: 1320px) {
+  .container {
     width: 1320px;
     padding: 0;
   }

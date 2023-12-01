@@ -90,8 +90,8 @@ span {
     line-height: 27;
   }
 }
-@media (min-width: 1440px) {
-  .cont {
+@media (min-width: 1320px) {
+  .container {
     width: 1320px;
     padding: 0;
   }
@@ -102,6 +102,8 @@ span {
 }
 .header {
   background-color: #f7faff;
+}
+.header_container {
   display: flex;
   justify-content: space-between;
 }
@@ -168,6 +170,21 @@ span {
   display: none;
 }
 
+@media (min-width: 1320px) {
+  .header_container {
+    display: flex;
+  }
+  .header_nav {
+    display: inherit;
+  }
+  .nav_list {
+    display: flex;
+    gap: 30px;
+  }
+  .mobile-menu-button--open {
+    display: none;
+  }
+}
 .banner-section {
   height: 717px;
 }

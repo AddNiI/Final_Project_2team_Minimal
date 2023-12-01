@@ -3,43 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo-cont">
-        <svg class="logo-icon">
-          <use></use>
-        </svg>
-      </div>
-      <!-- display:none-->
-      <nav class="nav header_nav">
-        <ul>
-          <li>About us</li>
-          <li>Our products</li>
-          <li>Prices</li>
-          <li>Bestsellers</li>
-          <li>Reviews</li>
-          <li>Contacts</li>
-        </ul>
-      </nav>
-      <div class="mobile-menu-button--open">
-        <input class="js-open-menu js-close-menu mm-input" type="checkbox" id="mobile-menu-button--open" />
-        <label for="mobile-menu-button--open">
-          <div class="mobile-menu-button-cont">
-            <div class="line-cont">
-              <!-- before for line -->
-              <div class="line"></div>
+      <div class="container header_container">
+        <div class="logo-cont">
+          <svg class="logo-icon">
+            <use></use>
+          </svg>
+        </div>
+        <!-- display:none-->
+        <nav class="nav header_nav">
+          <ul class="nav_list">
+            <li class="nav_item">About us</li>
+            <li class="nav_item">Our products</li>
+            <li class="nav_item">Prices</li>
+            <li class="nav_item">Bestsellers</li>
+            <li class="nav_item">Reviews</li>
+            <li class="nav_item">Contacts</li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-button--open">
+          <input
+            class="js-open-menu js-close-menu mm-input"
+            type="checkbox"
+            id="mobile-menu-button--open"
+          />
+          <label for="mobile-menu-button--open">
+            <div class="mobile-menu-button-cont">
+              <div class="line-cont">
+                <!-- before for line -->
+                <div class="line"></div>
+              </div>
+              <div class="line-cont">
+                <!-- before for line -->
+                <div class="line"></div>
+              </div>
             </div>
-            <div class="line-cont">
-              <!-- before for line -->
-              <div class="line"></div>
-            </div>
-          </div>
-        </label>
+          </label>
+        </div>
       </div>
-
     </header>
 
     <main>
@@ -68,4 +73,26 @@
     </main>
     <script src="./mm.js"></script>
   </body>
+  <footer class="footer">
+    <div class="container footer_container">
+      <div class="logo-cont"></div>
+      <div class="footer_nav"></div>
+      <address class="footer_address">
+        <div class="rotated">
+          <a href="">Obolonsky Prospect, 14, Kyiv</a>
+          <p>Daily 10:00-21:00</p>
+        </div>
+        <div class="number">
+          <a href="">+380669384758</a>
+          <a href="">+380669384758</a>
+        </div>
+      </address>
+      <div class="footer_sub-title">
+        <p>
+          By using this website, you agree to the Terms of Service and Privacy
+          Policy
+        </p>
+      </div>
+    </div>
+  </footer>
 </html>
