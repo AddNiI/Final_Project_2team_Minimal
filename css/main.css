@@ -15,7 +15,7 @@ button {
   color: #fff;
   padding: 17px 65px;
   border: none;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -23,7 +23,7 @@ button {
 
 h1 {
   color: #0a224a;
-  font-family: Playfair Display;
+  font-family: "Playfair Display", serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 42px;
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   color: #0a224a;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 45px;
@@ -42,7 +42,7 @@ h2 {
 h3 {
   color: #0a224a;
   text-align: center;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -51,7 +51,7 @@ h3 {
 
 p {
   color: #0a224a;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -86,4 +86,4 @@ p {
     width: 1096px;
     padding: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
