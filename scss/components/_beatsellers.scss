@@ -1,0 +1,119 @@
+.beatsellers-name{
+    padding-left: 98px;
+    font-size: 28px;
+    line-height: 42px;
+    width: 179px;
+}
+
+.beatsellers-block{
+    display: block;
+    width: 343px;
+    margin: 0 auto;
+
+    &-sub{
+        color: var(--Blue-font, #0A224A);
+        &__image{
+            width: 343px;
+            margin-bottom: 14px;
+            margin-top: 21px;
+        }
+        &__price{
+            font-weight: 700;
+        }
+    }
+    &-subsub{
+        display: block;
+        &bl{
+            color: var(--Blue-font, #0A224A);
+            display: block;
+            &ock{     
+                margin-top: 30px;
+                &__image{
+                    width: 343px;
+                    margin-bottom: 14px;
+                }
+                
+                &__price{
+                    font-weight: 700;
+                }
+            }
+            &ockr{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .beatsellers-name{
+        padding-left: 282px;
+        line-height: 45px;
+        font-size: 32px;
+    }
+
+    .beatsellers-block{
+        width: 704px;
+        display: block;
+    
+        &-sub{
+            &__image{
+                margin-top: 30px;
+                width: 704px;
+                margin-bottom: 15px;
+            }
+        }
+        &-subsub{
+            &bl{
+                display: flex;
+                &ock{     
+                    margin-top: 32px;
+                    &__image{
+                        width: 336px;
+                        margin-bottom: 15px;
+                    }
+                }
+                &ockr{
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1440px) {
+    .beatsellers-name{
+        padding-left: 618px;
+    }
+
+    .beatsellers-block{
+        width: 1096px;
+        display: flex;
+    
+        &-sub{
+            &__image{
+                margin-top: 30px;
+                width: 536px;
+                margin-bottom: 15px;
+                height: 489px;
+            }
+        }
+        &-subsub{
+            &bl{
+                width: 536px;
+                display: flex;
+                &ock{     
+                    margin-top: 30px;
+                    &__image{
+                        width: 258px;
+                        margin-bottom: 15px;
+                        height: 193px;
+                    }
+                }    
+                &ockr{
+                    margin-right: 20px;
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+}
