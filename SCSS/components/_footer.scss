@@ -1,11 +1,28 @@
 .footer {
+  background-color: $txt-color;
   &_container {
     padding-top: 32px;
     padding-bottom: 32px;
     display: grid;
   }
+  &_content {
+    color: $main-color;
+  }
   &_sub-title {
-    margin-top: 64px;
+    opacity: 0.6;
+    text-align: center;
+    &-cont {
+      margin-top: 64px;
+    }
+  }
+  .nav {
+    &_list {
+      display: grid;
+      gap: 8px;
+    }
+    &_item {
+      color: aqua;
+    }
   }
 }
 .located {
@@ -26,11 +43,17 @@
       grid-row-start: 1;
       grid-row-end: 3;
     }
-    &_sub-title {
+    &_sub-title-cont {
       display: grid;
       justify-items: center;
       grid-column-start: 1;
       grid-column-end: 3;
+    }
+    .nav {
+      &_list {
+        display: grid;
+        gap: 16px;
+      }
     }
   }
 }
@@ -40,6 +63,12 @@
       gap: 87px;
       display: flex;
       align-items: flex-start;
+    }
+    .nav {
+      &_list {
+        display: flex;
+        gap: 30px;
+      }
     }
   }
   .number,

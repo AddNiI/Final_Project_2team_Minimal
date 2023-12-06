@@ -1,69 +1,65 @@
-.cont {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
   width: 100%;
   padding: 0px 16px;
 }
-.no-scroll{
-  overflow: hidden;
+
+button {
+  background-color: #0a224a;
+  color: #fff;
+  padding: 17px 0;
+  width: 224px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
+
 h1 {
-  // color:  #0A224A;
-  color: $txt-color;
-  font-family: Playfair Display;
+  color: #0a224a;
+  font-family: "Playfair Display", serif;
   font-size: 28px;
-  font-style: normal;
   font-weight: 400;
   line-height: 42px;
   text-transform: uppercase;
 }
+
 h2 {
-  //   color:  #0a224a;
-  color: $txt-color;
-  font-family: Roboto;
+  color: #0a224a;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
   line-height: 45px;
   text-transform: uppercase;
 }
+
 h3 {
-  // color:  #0A224A;
-  color: $txt-color;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-  text-transform: uppercase;
-}
-h4 {
-  // color: #0a224a;
-  color: $txt-color;
+  color: #0a224a;
   text-align: center;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   opacity: 0.8;
 }
-p  {
-  // color: #0A224A;
-  color: $txt-color;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-span {
+
+p,
+a {
   color: #0a224a;
-  color: $txt-color;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  text-decoration: none;
 }
+
 @media (min-width: 768px) {
   .container {
     padding: 0 32px;
@@ -76,24 +72,22 @@ span {
     line-height: 45px;
   }
   h3 {
-    line-height: 27px;
-  }
-  h4 {
     font-size: 16px;
     line-height: 24px;
   }
   p {
     font-size: 18px;
-    line-height: 27;
+    line-height: 27px;
   }
 }
-@media (min-width: 1320px) {
+@media (min-width: 1440px) {
   .container {
     width: 1320px;
     padding: 0;
   }
-  .cont--small{
+  .container--small {
     width: 1096px;
+    margin: 0 auto;
     padding: 0;
   }
 }

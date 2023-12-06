@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,49 +24,50 @@
         <!-- display:none-->
         <nav class="nav header_nav">
           <ul class="nav_list">
-            <li class="nav_item">About us</li>
-            <li class="nav_item">Our products</li>
-            <li class="nav_item">Prices</li>
-            <li class="nav_item">Bestsellers</li>
-            <li class="nav_item">Reviews</li>
-            <li class="nav_item">Contacts</li>
+            <li class="nav_item"><a href="">About us</a></li>
+            <li class="nav_item"><a href="">Our products</a></li>
+            <li class="nav_item"><a href="">Prices</a></li>
+            <li class="nav_item"><a href="">Bestsellers</a></li>
+            <li class="nav_item"><a href="">Reviews</a></li>
+            <li class="nav_item"><a href="">Contacts</a></li>
           </ul>
         </nav>
         <div class="mobile-menu-button--open">
           <input
-            class="js-open-menu js-close-menu mm-input"
+            class="mm-input"
             type="checkbox"
             id="mobile-menu-button--open"
           />
-          <label for="mobile-menu-button--open">
-            <div class="mobile-menu-button-cont">
-              <div class="line-cont">
+          <label class="burger-menu" for="mobile-menu-button--open">
+            <div class="burger-menu_cont">
+              <div class="burger-menu_line-cont burger-menu_line-cont--dawn">
                 <!-- before for line -->
-                <div class="line"></div>
+                <div class="burger-menu_line"></div>
               </div>
-              <div class="line-cont">
+              <div class="burger-menu_line-cont burger-menu_line-cont--up">
                 <!-- before for line -->
-                <div class="line"></div>
+                <div class="burger-menu_line"></div>
               </div>
             </div>
           </label>
+
+          <article class="mobile-menu">
+            <nav class="nav mobile-menu-nav">
+              <ul class="mobile-menu-nav_list">
+                <li class="nav_item"><a href="">About us</a></li>
+                <li class="nav_item"><a href="">Our products</a></li>
+                <li class="nav_item"><a href="">Prices</a></li>
+                <li class="nav_item"><a href="">Bestsellers</a></li>
+                <li class="nav_item"><a href="">Reviews</a></li>
+                <li class="nav_item"><a href="">Contacts</a></li>
+              </ul>
+            </nav>
+          </article>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="js-menu-container mobile-menu">
-        <nav class="nav mobile-menu-nav">
-          <ul class="mobile-menu-nav_list">
-            <li>About us</li>
-            <li>Our products</li>
-            <li>Prices</li>
-            <li>Bestsellers</li>
-            <li>Reviews</li>
-            <li>Contacts</li>
-          </ul>
-        </nav>
-      </section>
       <section class="banner-section">
         <div class="cont banner_cont">
           <h1>Modern and minimalist furniture for you</h1>
@@ -68,6 +76,36 @@
             pieces
           </p>
           <button>Subscribe</button>
+        </div>
+      </section>
+      <section class="forma">
+        <div class="container container--small forma_container">
+          <article class="forma_wrapper">
+            <h2 class="forma_title">Newsletter</h2>
+            <p>
+              Every week we will send you new designs and information about
+              sales.
+            </p>
+            <form class="forma_form" action="">
+              <input
+                id="user-name"
+                class="forma_input"
+                placeholder="Name"
+                type="text"
+              />
+              <input
+                id="user-mail"
+                class="forma_input"
+                placeholder="E-mail"
+                type="text"
+              />
+            </form>
+            <div class="forma_checkbox-wrapper">
+              <input class="agree-box" type="checkbox" />
+              <p>Agree to subscribe to the newsletter</p>
+            </div>
+            <button>Send</button>
+          </article>
         </div>
       </section>
     </main>
@@ -80,26 +118,38 @@
         </div>
         <nav class="footer_nav">
           <ul class="nav_list">
-            <li class="nav_item">About us</li>
-            <li class="nav_item">Our products</li>
-            <li class="nav_item">Prices</li>
-            <li class="nav_item">Bestsellers</li>
-            <li class="nav_item">Reviews</li>
-            <li class="nav_item">Contacts</li>
+            <li class="nav_item">
+              <a class="footer_content" href="">About us</a>
+            </li>
+            <li class="nav_item">
+              <a class="footer_content" href="">Our products</a>
+            </li>
+            <li class="nav_item">
+              <a class="footer_content" href="">Prices</a>
+            </li>
+            <li class="nav_item">
+              <a class="footer_content" href="">Bestsellers</a>
+            </li>
+            <li class="nav_item">
+              <a class="footer_content" href="">Reviews</a>
+            </li>
+            <li class="nav_item">
+              <a class="footer_content" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="footer_address">
           <div class="located">
-            <a href="">Obolonsky Prospect, 14, Kyiv</a>
-            <p>Daily 10:00-21:00</p>
+            <a class="footer_content" href="">Obolonsky Prospect, 14, Kyiv</a>
+            <p class="footer_content">Daily 10:00-21:00</p>
           </div>
           <div class="number">
-            <a href="">+380669384758</a>
-            <a href="">+380669384758</a>
+            <a class="footer_content" href="">+380669384758</a>
+            <a class="footer_content" href="">+380669384758</a>
           </div>
         </address>
-        <div class="footer_sub-title">
-          <p>
+        <div class="footer_sub-title-cont">
+          <p class="footer_content footer_sub-title">
             By using this website, you agree to the Terms of Service and Privacy
             Policy
           </p>
