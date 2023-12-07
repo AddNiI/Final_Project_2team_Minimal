@@ -95,7 +95,7 @@ p {
   display: flex;
   margin: 30px 0;
   font-family: "Roboto", sans-serif;
-  color: var(--Blue-font, #0A224A);
+  color: #0A224A;
 }
 .price-block-sub__price {
   display: flex;
