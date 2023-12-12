@@ -87,3 +87,167 @@ p {
     padding: 0;
   }
 }
+.about {
+  width: 375px;
+  display: block;
+}
+.about-us {
+  width: 375px;
+  background-color: #f7faff;
+  font-family: "Roboto", sans-serif;
+  color: #0a224a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about-us-name {
+  display: flex;
+  width: 134px;
+  align-items: center;
+  padding: 64px 0 30px 16px;
+}
+.about-us-namesvg {
+  margin-right: 20px;
+}
+.about-us-bigtext {
+  margin: 0 auto;
+  width: 343px;
+  font-size: 28px;
+  line-height: 42px;
+}
+.about-us-text {
+  width: 343px;
+  margin: 30px auto 0 auto;
+}
+.about-us-best {
+  margin: 0 auto;
+  width: 170px;
+  text-align: center;
+  display: block;
+  padding-bottom: 64px;
+}
+.about-us-best-sub {
+  width: 170px;
+}
+.about-us-best-subnum {
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+  margin: 30px 0 14px 0;
+}
+.about-us-best-subnumr {
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+  margin: 30px 0 14px 0;
+}
+.about-us-img {
+  height: 400px;
+  position: relative;
+  left: -67px;
+  margin: 0 0 64px 0;
+}
+
+@media (min-width: 768px) {
+  .about {
+    width: 768px;
+    display: block;
+  }
+  .about-us {
+    width: 704px;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .about-us-name {
+    width: 144px;
+    padding: 64px 0 30px 16px;
+  }
+  .about-us-bigtext {
+    width: 576px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .about-us-text {
+    width: 576px;
+  }
+  .about-us-best {
+    width: 576px;
+    display: flex;
+    padding-bottom: 36px;
+  }
+  .about-us-best-sub {
+    width: 170px;
+  }
+  .about-us-best-subnum {
+    text-transform: uppercase;
+    margin: 30px 33px 14px 0;
+  }
+  .about-us-best-subtxt {
+    margin-right: 33px;
+  }
+  .about-us-best-subnumr {
+    text-transform: uppercase;
+    margin: 30px 0 14px 0;
+  }
+  .about-us-best-subtxtr {
+    margin-right: 0;
+  }
+  .about-us-img {
+    height: 540px;
+    margin: 0 32px 100px;
+    position: static;
+  }
+}
+@media (min-width: 1440px) {
+  .about {
+    width: 1320px;
+    background-color: white;
+    display: flex;
+  }
+  .about-us {
+    width: 760px;
+    margin: 20px 19px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .about-us-name {
+    width: 200px;
+    padding: 36px 0 30px 69px;
+  }
+  .about-us-bigtext {
+    width: 622px;
+  }
+  .about-us-text {
+    width: 622px;
+  }
+  .about-us-best {
+    width: 622px;
+    display: flex;
+    padding-bottom: 34px;
+  }
+  .about-us-best-sub {
+    width: 170px;
+    margin-right: 23px;
+  }
+  .about-us-best-subnum {
+    text-transform: uppercase;
+    margin: 30px 28px 0 28px;
+  }
+  .about-us-best-subtxt {
+    width: 170px;
+  }
+  .about-us-best-subnumr {
+    text-transform: uppercase;
+    margin: 30px 28px 0 28px;
+  }
+  .about-us-best-subtxtr {
+    margin-right: 0;
+  }
+  .about-us-img {
+    height: 540px;
+    margin: 0 32px 100px;
+    position: absolute;
+    left: 805px;
+  }
+}
