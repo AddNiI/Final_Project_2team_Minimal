@@ -9,6 +9,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    height: 983px;
     &-name {
       display: flex;
       width: 134px;
@@ -51,10 +52,12 @@
       }
     }
     &-img {
-      height: 400px;
       position: relative;
       left: -67px;
       margin: 0 0 64px 0;
+      img{
+      height: 400px;
+      }
     }
   }
 }
@@ -68,6 +71,7 @@
         margin: 30px auto;
         font-size: 18px;
         line-height: 27px;
+        height: 620px;
       &-name {
         width: 144px;
         padding: 64px 0 30px 16px;
@@ -103,9 +107,11 @@
         }
       }
       &-img {
-        height: 540px;
         margin: 0 32px 100px;
         position: static;
+        img{
+        height: 540px;
+        }
       }
     }
   }
@@ -117,6 +123,7 @@
       background-color: white;
       display: flex;
       &-us {
+          height: 500px;
           width: 760px;
           margin: 20px 19px;
           font-size: 18px;
@@ -155,11 +162,13 @@
           }
         }
         &-img {
-          height: 540px;
           margin: 0 32px 100px;
           position: absolute;
           left: 805px;
           /*top: 789px;*/
+          img{
+            height: 540px;
+          }
         }
       }
     }
