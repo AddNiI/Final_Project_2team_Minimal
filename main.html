@@ -18,7 +18,7 @@
       <div class="container header_container">
         <div class="logo-cont">
           <svg class="logo-icon">
-            <use></use>
+            <use xlink:href="./src/svg/logo.svg#logo"></use>
           </svg>
         </div>
         <!-- display:none-->
@@ -40,11 +40,11 @@
           />
           <label class="burger-menu" for="mobile-menu-button--open">
             <div class="burger-menu_cont">
-              <div class="burger-menu_line-cont burger-menu_line-cont--dawn">
+              <div class="burger-menu_line-cont burger-menu_line-cont--down">
                 <!-- before for line -->
                 <div class="burger-menu_line"></div>
               </div>
-              <div class="burger-menu_line-cont burger-menu_line-cont--up">
+              <div class="burger-menu_line-cont burger-menu_line-cont--none">
                 <!-- before for line -->
                 <div class="burger-menu_line"></div>
               </div>
@@ -78,42 +78,67 @@
           <button>Subscribe</button>
         </div>
       </section>
-      <section class="forma">
-        <div class="container container--small forma_container">
-          <article class="forma_wrapper">
-            <h2 class="forma_title">Newsletter</h2>
+      <section class="form">
+        <div class="container container--small form_container">
+          <article class="form_wrapper">
+            <h2 class="form_title">Newsletter</h2>
             <p>
               Every week we will send you new designs and information about
               sales.
             </p>
-            <form class="forma_form" action="">
+            <form class="form_form-cont" action="">
               <input
                 id="user-name"
-                class="forma_input"
+                class="form_input"
                 placeholder="Name"
                 type="text"
               />
               <input
                 id="user-mail"
-                class="forma_input"
+                class="form_input"
                 placeholder="E-mail"
                 type="text"
               />
             </form>
-            <div class="forma_checkbox-wrapper">
-              <input class="agree-box" type="checkbox" />
+            <div class="form_checkbox-wrapper">
+              <input class="agree-box" type="checkbox" id="agree-box" />
+              <label class="agree-box_button" for="agree-box">
+                <svg class="agree-box_icon">
+                  <use href="./src/svg/check-mark.svg#check-mark"></use>
+                </svg>
+              </label>
               <p>Agree to subscribe to the newsletter</p>
             </div>
             <button>Send</button>
           </article>
+          <div class="form_photo-container">
+            <picture>
+              <source
+                srcset="./src/images/newsletter--tablet.png"
+                media="(min-width:768px) and (max-width:1440px)"
+              />
+              <img alt="photo of sofa" src="./src/images/newsletter.png" />
+            </picture>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container footer_container">
         <div class="logo-cont footer_logo-cont">
-          <svg>
-            <use></use>
+          <svg class="logo-icon">
+            <use xlink:href="./src/svg/logo.svg#logo"></use>
+          </svg>
+        </div>
+        <div class="messengers">
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/test.svg#test"></use>
+          </svg>
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/svg3.svg#svg3"></use>
+          </svg>
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/svg2.svg#svg2"></use>
           </svg>
         </div>
         <nav class="footer_nav">
@@ -138,16 +163,17 @@
             </li>
           </ul>
         </nav>
-        <address class="footer_address">
-          <div class="located">
-            <a class="footer_content" href="">Obolonsky Prospect, 14, Kyiv</a>
-            <p class="footer_content">Daily 10:00-21:00</p>
-          </div>
-          <div class="number">
-            <a class="footer_content" href="">+380669384758</a>
-            <a class="footer_content" href="">+380669384758</a>
-          </div>
-        </address>
+        <!-- <address class="footer_address"> -->
+        <div class="footer_located">
+          <a class="footer_content" href="">Obolonsky Prospect, 14, Kyiv</a>
+          <p class="footer_content">Daily 10:00-21:00</p>
+        </div>
+        <div class="footer_number">
+          <a class="footer_content" href="">+380669384758</a>
+          <a class="footer_content" href="">+380669384758</a>
+          <a class="footer_content" href="">minimal.furniture@gmail.com</a>
+        </div>
+        <!-- </address> -->
         <div class="footer_sub-title-cont">
           <p class="footer_content footer_sub-title">
             By using this website, you agree to the Terms of Service and Privacy
@@ -156,6 +182,5 @@
         </div>
       </div>
     </footer>
-    <script src="./mm.js"></script>
   </body>
 </html>

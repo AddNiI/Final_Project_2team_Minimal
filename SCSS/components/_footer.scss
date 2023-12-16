@@ -1,9 +1,14 @@
 .footer {
   background-color: $txt-color;
+
   &_container {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 36px;
+    padding-bottom: 16px;
     display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  &_nav {
+    margin-top: 42px;
   }
   &_content {
     color: $main-color;
@@ -13,6 +18,8 @@
     text-align: center;
     &-cont {
       margin-top: 64px;
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
   }
   .nav {
@@ -24,45 +31,82 @@
       color: aqua;
     }
   }
+  &_located {
+    display: grid;
+    gap: 8px;
+    margin-top: 36px;
+    grid-column-start: 1;
+  }
+  &_number {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 35px;
+    grid-column-start: 1;
+  }
 }
-.located {
-  display: grid;
-  gap: 24px;
-  margin-top: 32px;
-}
-.number {
+.messengers {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 64px;
+  justify-content: end;
+  grid-column-start: 2;
+  gap: 16px;
+}
+.logo-icon {
+  width: 100px;
+  height: 16px;
+  fill: $main-color;
+}
+.messengers-icon {
+  width: 28px;
+  height: 28px;
 }
 @media (min-width: 768px) {
   .footer {
+    &_container {
+      padding: 48px 32px 36px;
+    }
     &_nav {
+      margin-top: 0;
       grid-column-start: 2;
       grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-end: 4;
     }
     &_sub-title-cont {
       display: grid;
       justify-items: center;
       grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-end: 4;
     }
     .nav {
       &_list {
-        display: grid;
         gap: 16px;
       }
     }
   }
+  .messengers {
+    grid-column-start: 3;
+    justify-content: end;
+    &-container {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
-@media (min-width: 1320px) {
+@media (min-width: 1440px) {
   .footer {
-    &_address {
-      gap: 87px;
+    &_container {
+      padding-top: 48px;
+
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+    &_number {
+      gap: 24px 87px;
+      grid-row-start: 2;
+      grid-column-start: 2;
       display: flex;
-      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 72px;
     }
     .nav {
       &_list {
@@ -70,9 +114,17 @@
         gap: 30px;
       }
     }
+    &_number,
+    &_located {
+      margin-top: 24px;
+    }
+    &_sub-title {
+      &-cont {
+        margin-top: 35px;
+      }
+    }
   }
-  .number,
-  .located {
-    margin: 0;
+  .messengers {
+    gap: 30px;
   }
 }

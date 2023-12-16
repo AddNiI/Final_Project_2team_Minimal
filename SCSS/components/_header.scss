@@ -2,6 +2,8 @@
   overflow: hidden;
   height: 88px;
   background-color: $section-color;
+  display: grid;
+  align-content: center;
   &_container {
     margin: 24px auto;
     display: flex;
@@ -23,13 +25,12 @@
     align-content: space-evenly;
   }
   &_line-cont {
-    &--up {
-      transition: bottom 0.1s linear 2s;
-      position: relative;
+    &--none {
+      opacity: 1;
+      transition: opacity 0.4s;
     }
-    &--dawn {
+    &--down {
       position: relative;
-      transition: top 0.1s linear 2s;
     }
   }
   &_line {
@@ -38,6 +39,8 @@
     width: 32px;
     height: 4px;
     border-radius: 5px;
+    transition: transform 0.4s;
+
     &::before {
       content: "";
       background-color: $txt-color;
@@ -47,8 +50,7 @@
       border-radius: 5px;
       position: relative;
       top: 7px;
-      transition: rotate 0s linear 0.6s;
-      //    transform: rotate(90deg);
+      transition: transform 0.4s;
     }
   }
   .logo-icon {
@@ -58,15 +60,14 @@
 }
 
 .mobile-menu {
+  display: none;
+
   position: absolute;
   left: 0;
   right: 0;
   margin: 114px 0;
   height: 100vh;
-  transform: translateY(-150%);
   background-color: $main-color;
-  transition: transform 0.6s;
-  // transform: translateY(0);
 
   &-nav {
     margin: 0 auto;
@@ -82,19 +83,20 @@
 .mm-input {
   display: none;
   &:checked ~ .mobile-menu {
-    transform: translateY(0);
+    display: inherit;
   }
+
   &:checked ~ .burger-menu .burger-menu_line-cont {
-    &--up {
-      bottom: 150%;
+    &--none {
+      opacity: 0.1;
     }
-    &--dawn {
-      top: 150%;
+    &--down {
+      top: 200%;
     }
   }
   &:checked ~ .burger-menu .burger-menu_line {
-    align-self: center;
     transform: rotate(45deg);
+
     &::before {
       transform: rotate(90deg);
       top: 0;
@@ -118,16 +120,14 @@
   }
   .line {
     width: 40px;
-    // transform: rotate(45deg);
     &::before {
       content: "";
       width: 40px;
       top: 8px;
-      //    transform: rotate(90deg);
     }
   }
 }
-@media (min-width: 1320px) {
+@media (min-width: 1440px) {
   .header {
     &_container {
       display: flex;
