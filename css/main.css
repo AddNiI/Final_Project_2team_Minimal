@@ -308,13 +308,16 @@ a {
   background-color: #0a224a;
   border: none;
 }
-.agree-box:checked ~ .agree-box__button .agree-box_icon {
+.agree-box:checked ~ .agree-box__button .agree-box__icon {
   display: inherit;
 }
-.agree-box_icon {
+.agree-box__icon {
   width: 13px;
   height: 13px;
   display: none;
+}
+.agree-box__text {
+  color: #7a7a7a;
 }
 
 @media (min-width: 768px) {

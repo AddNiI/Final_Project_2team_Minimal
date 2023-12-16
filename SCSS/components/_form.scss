@@ -62,14 +62,17 @@
   &:checked ~ &__button {
     background-color: $txt-color;
     border: none;
-    .agree-box_icon {
+    .agree-box__icon {
       display: inherit;
     }
   }
-  &_icon {
+  &__icon {
     width: 13px;
     height: 13px;
     display: none;
+  }
+  &__text {
+    color: $label-color;
   }
 }
 @media (min-width: 768px) {
