@@ -1,19 +1,19 @@
 .footer {
   background-color: $txt-color;
 
-  &_container {
+  &__container {
     padding-top: 36px;
     padding-bottom: 16px;
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-  &_nav {
+  &__nav {
     margin-top: 42px;
   }
-  &_content {
+  &__content {
     color: $main-color;
   }
-  &_sub-title {
+  &__sub-title {
     opacity: 0.6;
     text-align: center;
     &-cont {
@@ -23,21 +23,21 @@
     }
   }
   .nav {
-    &_list {
+    &__list {
       display: grid;
       gap: 8px;
     }
-    &_item {
+    &__item {
       color: aqua;
     }
   }
-  &_located {
+  &__located {
     display: grid;
     gap: 8px;
     margin-top: 36px;
     grid-column-start: 1;
   }
-  &_number {
+  &__number {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -62,23 +62,23 @@
 }
 @media (min-width: 768px) {
   .footer {
-    &_container {
+    &__container {
       padding: 48px 32px 36px;
     }
-    &_nav {
+    &__nav {
       margin-top: 0;
       grid-column-start: 2;
       grid-row-start: 1;
       grid-row-end: 4;
     }
-    &_sub-title-cont {
+    &__sub-title-cont {
       display: grid;
       justify-items: center;
       grid-column-start: 1;
       grid-column-end: 4;
     }
     .nav {
-      &_list {
+      &__list {
         gap: 16px;
       }
     }
@@ -94,12 +94,12 @@
 }
 @media (min-width: 1440px) {
   .footer {
-    &_container {
+    &__container {
       padding-top: 48px;
 
       grid-template-columns: 1fr 2fr 1fr;
     }
-    &_number {
+    &__number {
       gap: 24px 87px;
       grid-row-start: 2;
       grid-column-start: 2;
@@ -109,16 +109,16 @@
       height: 72px;
     }
     .nav {
-      &_list {
+      &__list {
         display: flex;
         gap: 30px;
       }
     }
-    &_number,
-    &_located {
+    &__number,
+    &__located {
       margin-top: 24px;
     }
-    &_sub-title {
+    &__sub-title {
       &-cont {
         margin-top: 35px;
       }

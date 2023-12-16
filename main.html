@@ -15,21 +15,21 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header_container">
+      <div class="container header__container">
         <div class="logo-cont">
           <svg class="logo-icon">
             <use xlink:href="./src/svg/logo.svg#logo"></use>
           </svg>
         </div>
         <!-- display:none-->
-        <nav class="nav header_nav">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="">About us</a></li>
-            <li class="nav_item"><a href="">Our products</a></li>
-            <li class="nav_item"><a href="">Prices</a></li>
-            <li class="nav_item"><a href="">Bestsellers</a></li>
-            <li class="nav_item"><a href="">Reviews</a></li>
-            <li class="nav_item"><a href="">Contacts</a></li>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="">About us</a></li>
+            <li class="nav__item"><a href="">Our products</a></li>
+            <li class="nav__item"><a href="">Prices</a></li>
+            <li class="nav__item"><a href="">Bestsellers</a></li>
+            <li class="nav__item"><a href="">Reviews</a></li>
+            <li class="nav__item"><a href="">Contacts</a></li>
           </ul>
         </nav>
         <div class="mobile-menu-button--open">
@@ -39,27 +39,27 @@
             id="mobile-menu-button--open"
           />
           <label class="burger-menu" for="mobile-menu-button--open">
-            <div class="burger-menu_cont">
-              <div class="burger-menu_line-cont burger-menu_line-cont--down">
+            <div class="burger-menu__cont">
+              <div class="burger-menu__line-cont burger-menu__line-cont--down">
                 <!-- before for line -->
-                <div class="burger-menu_line"></div>
+                <div class="burger-menu__line"></div>
               </div>
-              <div class="burger-menu_line-cont burger-menu_line-cont--none">
+              <div class="burger-menu__line-cont burger-menu__line-cont--none">
                 <!-- before for line -->
-                <div class="burger-menu_line"></div>
+                <div class="burger-menu__line"></div>
               </div>
             </div>
           </label>
 
           <article class="mobile-menu">
             <nav class="nav mobile-menu-nav">
-              <ul class="mobile-menu-nav_list">
-                <li class="nav_item"><a href="">About us</a></li>
-                <li class="nav_item"><a href="">Our products</a></li>
-                <li class="nav_item"><a href="">Prices</a></li>
-                <li class="nav_item"><a href="">Bestsellers</a></li>
-                <li class="nav_item"><a href="">Reviews</a></li>
-                <li class="nav_item"><a href="">Contacts</a></li>
+              <ul class="mobile-menu-nav__list">
+                <li class="nav__item"><a href="">About us</a></li>
+                <li class="nav__item"><a href="">Our products</a></li>
+                <li class="nav__item"><a href="">Prices</a></li>
+                <li class="nav__item"><a href="">Bestsellers</a></li>
+                <li class="nav__item"><a href="">Reviews</a></li>
+                <li class="nav__item"><a href="">Contacts</a></li>
               </ul>
             </nav>
           </article>
@@ -69,41 +69,42 @@
 
     <main>
       <section class="banner-section">
-        <div class="cont banner_cont">
+        <div class="container banner__container"></div>
+        <article class=" banner__wrapper">
           <h1>Modern and minimalist furniture for you</h1>
           <p>
             Add a touch of elegance to your space with handcrafted furniture
             pieces
           </p>
           <button>Subscribe</button>
-        </div>
+        </article>
       </section>
       <section class="form">
-        <div class="container container--small form_container">
-          <article class="form_wrapper">
-            <h2 class="form_title">Newsletter</h2>
+        <div class="container container--small form__container">
+          <article class="form__wrapper">
+            <h2 class="form__title">Newsletter</h2>
             <p>
               Every week we will send you new designs and information about
               sales.
             </p>
-            <form class="form_form-cont" action="">
+            <form class="form__form-cont" action="">
               <input
                 id="user-name"
-                class="form_input"
+                class="form__input"
                 placeholder="Name"
                 type="text"
               />
               <input
                 id="user-mail"
-                class="form_input"
+                class="form__input"
                 placeholder="E-mail"
                 type="text"
               />
             </form>
-            <div class="form_checkbox-wrapper">
+            <div class="form__checkbox-wrapper">
               <input class="agree-box" type="checkbox" id="agree-box" />
-              <label class="agree-box_button" for="agree-box">
-                <svg class="agree-box_icon">
+              <label class="agree-box__button" for="agree-box">
+                <svg class="agree-box__icon">
                   <use href="./src/svg/check-mark.svg#check-mark"></use>
                 </svg>
               </label>
@@ -111,7 +112,7 @@
             </div>
             <button>Send</button>
           </article>
-          <div class="form_photo-container">
+          <div class="form__photo-container">
             <picture>
               <source
                 srcset="./src/images/newsletter--tablet.png"
@@ -124,8 +125,8 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer_container">
-        <div class="logo-cont footer_logo-cont">
+      <div class="container footer__container">
+        <div class="logo-cont footer__logo-cont">
           <svg class="logo-icon">
             <use xlink:href="./src/svg/logo.svg#logo"></use>
           </svg>
@@ -141,41 +142,41 @@
             <use xlink:href="./src/svg/svg2.svg#svg2"></use>
           </svg>
         </div>
-        <nav class="footer_nav">
-          <ul class="nav_list">
-            <li class="nav_item">
-              <a class="footer_content" href="">About us</a>
+        <nav class="footer__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="footer__content" href="">About us</a>
             </li>
-            <li class="nav_item">
-              <a class="footer_content" href="">Our products</a>
+            <li class="nav__item">
+              <a class="footer__content" href="">Our products</a>
             </li>
-            <li class="nav_item">
-              <a class="footer_content" href="">Prices</a>
+            <li class="nav__item">
+              <a class="footer__content" href="">Prices</a>
             </li>
-            <li class="nav_item">
-              <a class="footer_content" href="">Bestsellers</a>
+            <li class="nav__item">
+              <a class="footer__content" href="">Bestsellers</a>
             </li>
-            <li class="nav_item">
-              <a class="footer_content" href="">Reviews</a>
+            <li class="nav__item">
+              <a class="footer__content" href="">Reviews</a>
             </li>
-            <li class="nav_item">
-              <a class="footer_content" href="">Contacts</a>
+            <li class="nav__item">
+              <a class="footer__content" href="">Contacts</a>
             </li>
           </ul>
         </nav>
         <!-- <address class="footer_address"> -->
-        <div class="footer_located">
-          <a class="footer_content" href="">Obolonsky Prospect, 14, Kyiv</a>
-          <p class="footer_content">Daily 10:00-21:00</p>
+        <div class="footer__located">
+          <a class="footer__content" href="">Obolonsky Prospect, 14, Kyiv</a>
+          <p class="footer__content">Daily 10:00-21:00</p>
         </div>
-        <div class="footer_number">
-          <a class="footer_content" href="">+380669384758</a>
-          <a class="footer_content" href="">+380669384758</a>
-          <a class="footer_content" href="">minimal.furniture@gmail.com</a>
+        <div class="footer__number">
+          <a class="footer__content" href="">+380669384758</a>
+          <a class="footer__content" href="">+380669384758</a>
+          <a class="footer__content" href="">minimal.furniture@gmail.com</a>
         </div>
         <!-- </address> -->
-        <div class="footer_sub-title-cont">
-          <p class="footer_content footer_sub-title">
+        <div class="footer__sub-title-cont">
+          <p class="footer__content footer__sub-title">
             By using this website, you agree to the Terms of Service and Privacy
             Policy
           </p>

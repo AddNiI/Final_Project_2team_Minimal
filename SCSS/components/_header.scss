@@ -4,19 +4,19 @@
   background-color: $section-color;
   display: grid;
   align-content: center;
-  &_container {
+  &__container {
     margin: 24px auto;
     display: flex;
     justify-content: space-between;
   }
-  &_nav {
+  &__nav {
     display: none;
   }
 }
 .burger-menu {
   width: 32px;
   height: 32px;
-  &_cont {
+  &__cont {
     width: 32px;
     height: 32px;
     display: grid;
@@ -24,7 +24,7 @@
     justify-content: center;
     align-content: space-evenly;
   }
-  &_line-cont {
+  &__line-cont {
     &--none {
       opacity: 1;
       transition: opacity 0.4s;
@@ -33,7 +33,7 @@
       position: relative;
     }
   }
-  &_line {
+  &__line {
     background-color: $txt-color;
     display: block;
     width: 32px;
@@ -65,7 +65,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin: 114px 0;
+  margin: 28px 0;
+  padding-top: 122px;
   height: 100vh;
   background-color: $main-color;
 
@@ -73,7 +74,7 @@
     margin: 0 auto;
     display: grid;
     justify-content: center;
-    &_list {
+    &__list {
       display: grid;
       gap: 17px;
       justify-items: center;
@@ -86,7 +87,7 @@
     display: inherit;
   }
 
-  &:checked ~ .burger-menu .burger-menu_line-cont {
+  &:checked ~ .burger-menu .burger-menu__line-cont {
     &--none {
       opacity: 0.1;
     }
@@ -94,7 +95,7 @@
       top: 200%;
     }
   }
-  &:checked ~ .burger-menu .burger-menu_line {
+  &:checked ~ .burger-menu .burger-menu__line {
     transform: rotate(45deg);
 
     &::before {
@@ -106,17 +107,22 @@
 @media (min-width: 768px) {
   .header {
     height: 95px;
-    &_container {
+    &__container {
       margin: 28px auto;
     }
   }
-  .mobile-menu-button--open {
-    width: 40px;
-    height: 40px;
-  }
-  .mobile-menu-button-cont {
-    width: 40px;
-    height: 40px;
+  .mobile-menu {
+    padding-top: 150px;
+    &-button {
+      &--open {
+        width: 40px;
+        height: 40px;
+      }
+      &-cont {
+        width: 40px;
+        height: 40px;
+      }
+    }
   }
   .line {
     width: 40px;
@@ -129,15 +135,15 @@
 }
 @media (min-width: 1440px) {
   .header {
-    &_container {
+    &__container {
       display: flex;
     }
-    &_nav {
+    &__nav {
       display: inherit;
     }
   }
   .nav {
-    &_list {
+    &__list {
       display: flex;
       gap: 30px;
     }
