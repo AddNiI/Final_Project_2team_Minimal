@@ -16,11 +16,11 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <div class="logo-cont">
+        <a href="#" class="logo-container">
           <svg class="logo-icon">
-            <use xlink:href="./src/svg/logo.svg#logo"></use>
+            <use xlink:href="./src/svg/logo-icon.svg#logo-icon"></use>
           </svg>
-        </div>
+        </a>
         <!-- display:none-->
         <nav class="nav header__nav">
           <ul class="nav__list">
@@ -54,12 +54,24 @@
           <article class="mobile-menu">
             <nav class="nav mobile-menu-nav">
               <ul class="mobile-menu-nav__list">
-                <li class="nav__item"><a href="">About us</a></li>
-                <li class="nav__item"><a href="">Our products</a></li>
-                <li class="nav__item"><a href="">Prices</a></li>
-                <li class="nav__item"><a href="">Bestsellers</a></li>
-                <li class="nav__item"><a href="">Reviews</a></li>
-                <li class="nav__item"><a href="">Contacts</a></li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">About us</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Our products</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Prices</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Bestsellers</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Reviews</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Contacts</a>
+                </li>
               </ul>
             </nav>
           </article>
@@ -69,15 +81,52 @@
 
     <main>
       <section class="banner-section">
-        <div class="container banner__container"></div>
-        <article class="banner__wrapper">
-          <h1>Modern and minimalist furniture for you</h1>
-          <p>
-            Add a touch of elegance to your space with handcrafted furniture
-            pieces
-          </p>
-          <button>Subscribe</button>
-        </article>
+        <div class="container banner__container">
+          <picture class="banner__image-container banner__image-container--first">
+            <source
+              srcset="./src/images/banner--mobile.png"
+              media="(max-width:767px)"
+            />
+            <source srcset="./src/images/banner2.png" />
+
+            <img
+              class="banner__image banner__image--first"
+              src="./src/images/banner--mobile.png"
+              alt="banner with products"
+            />
+          </picture>
+          <picture class="banner__image-container">
+            <source
+              srcset="./src/images/banner-second--tablet.png"
+              media="(max-width:1439px)" />
+            <source srcset="./src/images/banner1.png" />
+            <img
+              class="banner__image banner__image--second"
+              src="./src/images/banner-second--tablet.png"
+              alt=""
+          /></picture>
+          <picture class="banner__image-container banner__image-container--third">
+            <source
+              srcset="./src/images/banner3.png"
+              media="(min-width:1440px)"
+            />
+            <img
+              class="banner__image banner__image--third"
+              src="./src/images/banner3.png"
+              alt=""
+            />
+          </picture>
+          <article class="banner__wrapper">
+            <h1 class="banner__title">Modern and minimalist furniture for you</h1>
+            <div class="banner__content">
+              <p>
+                Add a touch of elegance to your space with handcrafted furniture
+                pieces
+              </p>
+              <button>Subscribe</button>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="form">
         <div class="container container--small form__container">
@@ -109,7 +158,9 @@
                 </svg>
               </label>
               <label for="agree-box">
-                <p class="agree-box__text">Agree to subscribe to the newsletter</p></label
+                <p class="agree-box__text">
+                  Agree to subscribe to the newsletter
+                </p></label
               >
             </div>
             <button>Send</button>
@@ -128,11 +179,11 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="logo-cont footer__logo-cont">
-          <svg class="logo-icon">
-            <use xlink:href="./src/svg/logo.svg#logo"></use>
+        <a href="#" class="logo-container">
+          <svg class="logo-icon logo-icon--white">
+            <use xlink:href="./src/svg/logo-icon.svg#logo-icon"></use>
           </svg>
-        </div>
+        </a>
         <div class="messengers">
           <svg class="messengers-icon">
             <use xlink:href="./src/svg/test.svg#test"></use>

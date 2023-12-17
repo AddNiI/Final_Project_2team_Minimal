@@ -63,6 +63,7 @@
   display: none;
 
   position: absolute;
+  z-index: 99;
   left: 0;
   right: 0;
   margin: 28px 0;
@@ -130,6 +131,19 @@
       content: "";
       width: 40px;
       top: 8px;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .mobile-menu {
+    &-nav {
+      &__list {
+        gap: 30px;
+      }
+      &__link {
+        font-size: 25px;
+      }
     }
   }
 }

@@ -60,6 +60,21 @@ a {
   text-decoration: none;
 }
 
+.logo-icon {
+  width: 100px;
+  height: 16px;
+  fill: #0a224a;
+}
+
+.logo-container {
+  display: grid;
+  align-items: center;
+}
+
+.logo-icon--white {
+  fill: #fff;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 32px;
@@ -78,6 +93,9 @@ a {
   p {
     font-size: 18px;
     line-height: 27px;
+  }
+  .logo-icon {
+    width: 127px;
   }
 }
 @media (min-width: 1440px) {
@@ -153,6 +171,7 @@ a {
 .mobile-menu {
   display: none;
   position: absolute;
+  z-index: 99;
   left: 0;
   right: 0;
   margin: 28px 0;
@@ -218,6 +237,14 @@ a {
     top: 8px;
   }
 }
+@media (min-width: 950px) {
+  .mobile-menu-nav__list {
+    gap: 30px;
+  }
+  .mobile-menu-nav__link {
+    font-size: 25px;
+  }
+}
 @media (min-width: 1440px) {
   .header__container {
     display: flex;
@@ -233,13 +260,84 @@ a {
     display: none;
   }
 }
-.banner-section {
-  height: 717px;
+.banner__container {
+  position: relative;
+  padding: 0;
 }
-.banner_cont {
-  margin-top: 140px;
+.banner__image {
+  min-width: 350px;
+  width: 100%;
+}
+.banner__image--second, .banner__image--third {
+  display: none;
+}
+.banner__wrapper {
+  position: absolute;
+  top: 140px;
+  padding: 0px 16px;
+}
+.banner__content {
+  display: grid;
+  margin-top: 14px;
+  gap: 28px;
 }
 
+@media (min-width: 768px) {
+  .banner-section {
+    padding-top: 64px;
+  }
+  .banner__container {
+    display: flex;
+    gap: 32px;
+    align-items: end;
+  }
+  .banner__image {
+    width: 100%;
+  }
+  .banner__image--second {
+    display: block;
+  }
+  .banner__wrapper {
+    top: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .banner__image {
+    min-width: 0;
+  }
+  .banner__image-container--first {
+    width: 310px;
+    height: 318px;
+  }
+  .banner__image-container--third {
+    align-self: start;
+  }
+  .banner__image--first {
+    width: 310px;
+    height: 318px;
+  }
+  .banner__image--third {
+    display: block;
+    align-self: start;
+    width: 312px;
+    height: 337px;
+  }
+  .banner__wrapper {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .banner__title {
+    width: 60%;
+  }
+  .banner__content {
+    width: 312px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
 .form__container {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -397,12 +495,6 @@ a {
   gap: 16px;
 }
 
-.logo-icon {
-  width: 100px;
-  height: 16px;
-  fill: #fff;
-}
-
 .messengers-icon {
   width: 28px;
   height: 28px;
@@ -417,6 +509,11 @@ a {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 4;
+  }
+  .footer__sub-title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.188px;
   }
   .footer__sub-title-cont {
     display: grid;

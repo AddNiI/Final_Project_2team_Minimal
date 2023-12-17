@@ -51,11 +51,7 @@
   grid-column-start: 2;
   gap: 16px;
 }
-.logo-icon {
-  width: 100px;
-  height: 16px;
-  fill: $main-color;
-}
+
 .messengers-icon {
   width: 28px;
   height: 28px;
@@ -71,11 +67,16 @@
       grid-row-start: 1;
       grid-row-end: 4;
     }
-    &__sub-title-cont {
-      display: grid;
-      justify-items: center;
-      grid-column-start: 1;
-      grid-column-end: 4;
+    &__sub-title {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1.188px;
+      &-cont {
+        display: grid;
+        justify-items: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
     }
     .nav {
       &__list {

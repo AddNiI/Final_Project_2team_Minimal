@@ -1,9 +1,86 @@
 .banner {
-  &-section {
-    height: 717px;
+  &__container {
+    position: relative;
+    padding: 0;
   }
-  &_cont {
-    margin-top: 140px;
+  &__image {
+    min-width: 350px;
+    width: 100%;
+    &--second,
+    &--third {
+      display: none;
+    }
   }
-  
+  &__wrapper {
+    position: absolute;
+    top: 140px;
+    padding: 0px 16px;
+  }
+  &__content {
+    display: grid;
+    margin-top: 14px;
+    gap: 28px;
+  }
+}
+@media (min-width: 768px) {
+  .banner {
+    &-section {
+      padding-top: 64px;
+    }
+    &__container {
+      display: flex;
+      gap: 32px;
+      align-items: end;
+    }
+    &__image {
+      width: 100%;
+      &--second {
+        display: block;
+      }
+    }
+    &__wrapper {
+      top: 0;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .banner {
+    &__image {
+      min-width: 0;
+      &-container {
+        &--first {
+          width: 310px;
+          height: 318px;
+        }
+        &--third {
+          align-self: start;
+        }
+      }
+      &--first {
+        width: 310px;
+        height: 318px;
+      }
+      &--third {
+        display: block;
+        align-self: start;
+        width: 312px;
+        height: 337px;
+      }
+    }
+    &__wrapper {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+    &__title {
+      width: 60%;
+    }
+    &__content {
+      width: 312px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }

@@ -59,7 +59,18 @@ a {
   line-height: 24px;
   text-decoration: none;
 }
-
+.logo-icon {
+  width: 100px;
+  height: 16px;
+  fill: $txt-color;
+}
+.logo-container {
+  display: grid;
+  align-items: center;
+}
+.logo-icon--white {
+  fill: $main-color;
+}
 @media (min-width: 768px) {
   .container {
     padding: 0 32px;
@@ -78,6 +89,9 @@ a {
   p {
     font-size: 18px;
     line-height: 27px;
+  }
+  .logo-icon {
+    width: 127px;
   }
 }
 @media (min-width: 1440px) {
