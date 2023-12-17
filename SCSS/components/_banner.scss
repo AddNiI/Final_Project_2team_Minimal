@@ -4,7 +4,6 @@
     padding: 0;
   }
   &__image {
-    min-width: 350px;
     width: 100%;
     &--second,
     &--third {
@@ -33,7 +32,6 @@
       align-items: end;
     }
     &__image {
-      width: 100%;
       &--second {
         display: block;
       }
@@ -46,7 +44,6 @@
 @media (min-width: 1440px) {
   .banner {
     &__image {
-      min-width: 0;
       &-container {
         &--first {
           width: 310px;

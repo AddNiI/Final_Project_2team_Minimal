@@ -82,7 +82,9 @@
     <main>
       <section class="banner-section">
         <div class="container banner__container">
-          <picture class="banner__image-container banner__image-container--first">
+          <picture
+            class="banner__image-container banner__image-container--first"
+          >
             <source
               srcset="./src/images/banner--mobile.png"
               media="(max-width:767px)"
@@ -105,7 +107,9 @@
               src="./src/images/banner-second--tablet.png"
               alt=""
           /></picture>
-          <picture class="banner__image-container banner__image-container--third">
+          <picture
+            class="banner__image-container banner__image-container--third"
+          >
             <source
               srcset="./src/images/banner3.png"
               media="(min-width:1440px)"
@@ -117,7 +121,9 @@
             />
           </picture>
           <article class="banner__wrapper">
-            <h1 class="banner__title">Modern and minimalist furniture for you</h1>
+            <h1 class="banner__title">
+              Modern and minimalist furniture for you
+            </h1>
             <div class="banner__content">
               <p>
                 Add a touch of elegance to your space with handcrafted furniture
@@ -137,18 +143,34 @@
               sales.
             </p>
             <form class="form__form-cont" action="">
-              <input
-                id="user-name"
-                class="form__input"
-                placeholder="Name"
-                type="text"
-              />
-              <input
-                id="user-mail"
-                class="form__input"
-                placeholder="E-mail"
-                type="text"
-              />
+              <div class="form__input-cont">
+                <input
+                  id="user-name"
+                  class="form__input"
+                  placeholder="Name"
+                  type="text"
+                  minlength="2"
+                />
+                <label for="user-name ">
+                  <svg class="form__icon--error">
+                    <use href="./src/svg/input-error.svg#input-error"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="form__input-cont">
+                <input
+                  id="user-mail"
+                  class="form__input"
+                  placeholder="E-mail"
+                  type="text"
+                  minlength="2"
+                />
+                <label for="user-mail">
+                  <svg class="form__icon--error">
+                    <use href="./src/svg/input-error.svg#input-error"></use>
+                  </svg>
+                </label>
+              </div>
             </form>
             <div class="form__checkbox-wrapper">
               <input class="agree-box" type="checkbox" id="agree-box" />
