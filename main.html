@@ -97,7 +97,9 @@
               alt="banner with products"
             />
           </picture>
-          <picture class="banner__image-container">
+          <picture
+            class="banner__image-container banner__image-container--second"
+          >
             <source
               srcset="./src/images/banner-second--tablet.png"
               media="(max-width:1439px)" />
@@ -151,7 +153,7 @@
                   type="text"
                   minlength="2"
                 />
-                <label for="user-name ">
+                <label for="user-name">
                   <svg class="form__icon--error">
                     <use href="./src/svg/input-error.svg#input-error"></use>
                   </svg>
@@ -162,7 +164,7 @@
                   id="user-mail"
                   class="form__input"
                   placeholder="E-mail"
-                  type="text"
+                  type="email"
                   minlength="2"
                 />
                 <label for="user-mail">

@@ -5,6 +5,9 @@
   }
   &__image {
     width: 100%;
+    &--first {
+      height: 90vh;
+    }
     &--second,
     &--third {
       display: none;
@@ -30,19 +33,38 @@
       display: flex;
       gap: 32px;
       align-items: end;
+      padding: 0 32px;
     }
     &__image {
+      &-container {
+        &--first {
+          width: 85%;
+        }
+        &--second {
+          width: 100%;
+        }
+      }
+      &--first {
+        height: 40%;
+      }
       &--second {
         display: block;
       }
     }
     &__wrapper {
+      padding: 0 60px 0 0;
       top: 0;
+    }
+    &__content {
+      display: none;
     }
   }
 }
 @media (min-width: 1440px) {
   .banner {
+    &__container {
+      padding: 0;
+    }
     &__image {
       &-container {
         &--first {
@@ -74,6 +96,8 @@
       width: 60%;
     }
     &__content {
+      display: grid;
+      gap: 30px;
       width: 312px;
       position: absolute;
       bottom: 0;
