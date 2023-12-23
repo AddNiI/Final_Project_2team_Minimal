@@ -87,3 +87,28 @@ p {
     padding: 0;
   }
 }
+.our-products-section {
+  padding-top: 100px;
+}
+.our-products-section button[type=button], .our-products-section button {
+  display: none !important;
+}
+.our-products__title {
+  margin-bottom: 31px;
+  text-align: center;
+}
+.our-products__image {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .slick-track {
+    gap: 24px;
+  }
+}

@@ -1,0 +1,29 @@
+.our-products {
+
+  &-section {
+    padding-top: 100px;
+    button[type="button"] , button  {
+        display: none !important;
+      }
+  }
+  &__title {
+    margin-bottom: 31px;
+    text-align: center;
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+}
+.slick-track {
+  display: flex;
+  gap: 16px;
+
+}
+
+@media (min-width: 768px) {
+  .slick-track {
+    gap: 24px;
+  }
+}
