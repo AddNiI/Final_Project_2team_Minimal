@@ -47,7 +47,8 @@
 }
 .messengers {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  align-items: end;
   grid-column-start: 2;
   gap: 16px;
 }
@@ -55,6 +56,12 @@
 .messengers-icon {
   width: 28px;
   height: 28px;
+}
+@media (min-width: 350px) {
+  .messengers {
+    flex-direction: row;
+    justify-content: end;
+  }
 }
 @media (min-width: 768px) {
   .footer {
