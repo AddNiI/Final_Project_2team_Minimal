@@ -10,17 +10,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="clients">
-      <clients-c>your content</div>
-      <div class="clients-card-block">your content</div>
-      <div class="clients-card-block">your content</div>
-      <div class="clients-card-block">your content</div>
+    <div class="clients-cards">
+      <h2>Clients reviews</h2>
+      <div class="clients-cards-block">
+        <div class="clients-cards-block__card">
+          <div class="clients-cards-block__cardid">
+            <img src="./src/images/clients3.png" alt="logo of profil" />
+            <div class="clients-cards-block__cardidtext">
+              <h3>Alexandra dream</h3>
+              <p>1 week ago</p>
+            </div>
+          </div>
+          <div class="clients-cards-block__cardtext">
+            <p>
+              I was blown away by the quality and craftsmanship of the furniture
+              I received from this company. Each piece was unique and
+              beautifully designed, and you can tell that a lot of thought and
+              care goes into every detail.
+            </p>
+          </div>
+        </div>
+        <div class="clients-cards-block__card">
+          <div class="clients-cards-block__cardid">
+            <img src="./src/images/clients2.png" alt="logo of profil" />
+            <div class="clients-cards-block__cardidtext">
+              <h3>James Williams</h3>
+              <p>A week ago</p>
+            </div>
+          </div>
+          <div class="clients-cards-block__cardtext">
+            <p>
+              The "Minimal" furniture set is a fantastic addition to my home. It
+              boasts a minimalist design, enhancing the feel and look of my
+              living space. The sturdy construction is worth noting too, which
+              speaks volumes about its durability.
+            </p>
+          </div>
+        </div>
+        <div class="clients-cards-block__card">
+          <div class="clients-cards-block__cardid">
+            <img src="./src/images/clients1.png" alt="logo of profil" />
+            <div class="clients-cards-block__cardidtext">
+              <h3>Emily Watson</h3>
+              <p>3 week ago</p>
+            </div>
+          </div>
+          <div class="clients-cards-block__cardtext">
+            <p>
+              The "Minimal" furniture set has far exceeded my expectations. The
+              sleek design combined with the high-quality materials have not
+              only added an exceptional aesthetic to my space but also offered
+              an uncompromising standard of comfort.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       type="text/javascript"
@@ -36,7 +86,7 @@
     ></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $(".your-class").slick({
+        $(".clients-cards-block").slick({
           dots: true,
           infinite: false,
           speed: 300,
