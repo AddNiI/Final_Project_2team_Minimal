@@ -34,21 +34,21 @@
         </nav>
         <div class="mobile-menu-button--open">
           <input
-            class="mm-input"
+            class="burger-menu-input"
             type="checkbox"
             id="mobile-menu-button--open"
           />
           <label class="burger-menu" for="mobile-menu-button--open">
-            <div class="burger-menu__cont">
-              <div class="burger-menu__line-cont burger-menu__line-cont--down">
+            <span class="burger-menu__cont">
+              <span class="burger-menu__line-cont burger-menu__line-cont--down">
                 <!-- before for line -->
-                <div class="burger-menu__line"></div>
-              </div>
-              <div class="burger-menu__line-cont burger-menu__line-cont--none">
+                <span class="burger-menu__line"></span>
+              </span>
+              <span class="burger-menu__line-cont burger-menu__line-cont--none">
                 <!-- before for line -->
-                <div class="burger-menu__line"></div>
-              </div>
-            </div>
+                <span class="burger-menu__line"></span>
+              </span>
+            </span>
           </label>
 
           <article class="mobile-menu">
@@ -122,7 +122,7 @@
               alt=""
             />
           </picture>
-          <article class="banner__wrapper">
+          <div class="banner__wrapper">
             <h1 class="banner__title">
               Modern and minimalist furniture for you
             </h1>
@@ -133,7 +133,15 @@
               </p>
               <button>Subscribe</button>
             </div>
-          </article>
+          </div>
+          
+        </div>
+        <div class="banner__content banner__content--tablet">
+          <p>
+            Add a touch of elegance to your space with handcrafted furniture
+            pieces
+          </p>
+          <button>Subscribe</button>
         </div>
       </section>
       <section class="form">
@@ -144,7 +152,7 @@
               Every week we will send you new designs and information about
               sales.
             </p>
-            <form class="form__form-cont" action="">
+            <form class="form__form-cont" >
               <div class="form__input-cont">
                 <input
                   id="user-name"

@@ -53,6 +53,29 @@
       transition: transform 0.4s;
     }
   }
+  &-input {
+    display: none;
+    &:checked ~ .mobile-menu {
+      display: inherit;
+    }
+
+    &:checked ~ .burger-menu .burger-menu__line-cont {
+      &--none {
+        opacity: 0.1;
+      }
+      &--down {
+        top: 200%;
+      }
+    }
+    &:checked ~ .burger-menu .burger-menu__line {
+      transform: rotate(45deg);
+
+      &::before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+    }
+  }
   .logo-icon {
     width: 100px;
     height: 16px;
@@ -79,29 +102,6 @@
       display: grid;
       gap: 17px;
       justify-items: center;
-    }
-  }
-}
-.mm-input {
-  display: none;
-  &:checked ~ .mobile-menu {
-    display: inherit;
-  }
-
-  &:checked ~ .burger-menu .burger-menu__line-cont {
-    &--none {
-      opacity: 0.1;
-    }
-    &--down {
-      top: 200%;
-    }
-  }
-  &:checked ~ .burger-menu .burger-menu__line {
-    transform: rotate(45deg);
-
-    &::before {
-      transform: rotate(90deg);
-      top: 0;
     }
   }
 }
