@@ -90,9 +90,6 @@ p {
 .our-products-section {
   padding-top: 100px;
 }
-.our-products-section button[type=button], .our-products-section button {
-  display: none !important;
-}
 .our-products__title {
   margin-bottom: 31px;
   text-align: center;
