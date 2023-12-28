@@ -315,8 +315,6 @@ a {
   .banner__content {
     display: none;
   }
-}
-@media (min-width: 768px) and (max-width: 1440px) {
   .banner__content--tablet {
     display: grid;
     gap: 30px;
@@ -361,6 +359,9 @@ a {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+  .banner__content--tablet {
+    display: none;
   }
 }
 .form__container {

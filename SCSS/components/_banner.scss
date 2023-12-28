@@ -22,7 +22,7 @@
     display: grid;
     margin-top: 14px;
     gap: 28px;
-    &--tablet{
+    &--tablet {
       display: none;
     }
   }
@@ -60,17 +60,16 @@
     }
     &__content {
       display: none;
+      &--tablet {
+        display: grid;
+        gap: 30px;
+        width: 40%;
+        margin: 32px;
+      }
     }
   }
 }
-@media (min-width:768px) and (max-width:1440px) {
-  .banner__content--tablet{
-    display: grid;
-    gap: 30px;
-    width: 40%;
-    margin: 32px;
-  }
-}
+
 @media (min-width: 1440px) {
   .banner {
     &__container {
@@ -113,6 +112,9 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      &--tablet {
+        display: none;
+      }
     }
   }
 }
