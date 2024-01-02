@@ -20,6 +20,9 @@ button {
   font-weight: 400;
   line-height: 24px;
 }
+button:hover, button:focus {
+  background-color: #061835;
+}
 
 h1 {
   color: #0a224a;
