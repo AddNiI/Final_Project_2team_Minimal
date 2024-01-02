@@ -9,12 +9,10 @@
   width: 100%;
   padding: 0px 16px;
 }
-
 button {
-  background-color: #0a224a;
-  color: #fff;
-  padding: 17px 0;
-  width: 224px;
+  background-color: $txt-color;
+  color: $main-color;
+  padding: 17px 65px;
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -23,7 +21,8 @@ button {
 }
 
 h1 {
-  color: #0a224a;
+  // color:  #0A224A;
+  color: $txt-color;
   font-family: "Playfair Display", serif;
   font-size: 28px;
   font-weight: 400;
@@ -32,7 +31,8 @@ h1 {
 }
 
 h2 {
-  color: #0a224a;
+  //   color:  #0a224a;
+  color: $txt-color;
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -41,7 +41,8 @@ h2 {
 }
 
 h3 {
-  color: #0a224a;
+  // color: #0a224a;
+  color: $txt-color;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -49,10 +50,9 @@ h3 {
   line-height: 18px;
   opacity: 0.8;
 }
-
-p,
-a {
-  color: #0a224a;
+p , a {
+  // color: #0A224A;
+  color: $txt-color;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;

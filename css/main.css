@@ -13,8 +13,7 @@
 button {
   background-color: #0a224a;
   color: #fff;
-  padding: 17px 0;
-  width: 224px;
+  padding: 17px 65px;
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -50,8 +49,7 @@ h3 {
   opacity: 0.8;
 }
 
-p,
-a {
+p, a {
   color: #0a224a;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
