@@ -14,64 +14,318 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
-    <title>Document</title>
+    <title>Minimal</title>
+    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png" />
+    <link rel="apple-touch-icon" href="src/images/favicon.png" />
   </head>
   <body>
-    <section class="our-products-section">
-      <div class="container our-products__container">
-        <h2 class="our-products__title">OUR PRODUCTS</h2>
-        <div class="our-products__carousel">
-          <div class="our-products__card">
-            <img
-              class="our-products__image"
-              srcset="
-                ./src/images/ourproducts1.png,
-                ./src/images/ourproducts1@2x.png 2x
-              "
-              alt="shelf"
-            />
-            <p>Minimalist storage solutions</p>
-          </div>
-          <div class="our-products__card">
-            <img
-              class="our-products__image"
-              srcset="
-                ./src/images/ourproducts2.png,
-                ./src/images/ourproducts2@2x.png 2x
-              "
-              alt="sofa"
-            />
-            <p>Handcrafted minimalist seating</p>
-          </div>
-          <div class="our-products__card">
-            <img
-              class="our-products__image"
-              srcset="
-                ./src/images/ourproducts3.png,
-                ./src/images/ourproducts3@2x.png 2x
-              "
-              alt="table"
-            />
-            <p>Handcrafted minimalist seating</p>
-          </div>
-          <div class="our-products__card">
-            <img
-              class="our-products__image"
-              srcset="
-                ./src/images/ourproducts4.png,
-                ./src/images/ourproducts4@2x.png 2x
-              "
-              alt="chair"
-            />
-            <p>Minimalist seating for every space</p>
-          </div>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo-container">
+          <svg class="logo-icon">
+            <use xlink:href="./src/svg/logo-icon.svg#logo-icon"></use>
+          </svg>
+        </a>
+        <!-- display:none-->
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="">About us</a></li>
+            <li class="nav__item"><a href="">Our products</a></li>
+            <li class="nav__item"><a href="">Prices</a></li>
+            <li class="nav__item"><a href="">Bestsellers</a></li>
+            <li class="nav__item"><a href="">Reviews</a></li>
+            <li class="nav__item"><a href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-button--open">
+          <input
+            class="burger-menu-input"
+            type="checkbox"
+            id="mobile-menu-button--open"
+          />
+          <label class="burger-menu" for="mobile-menu-button--open">
+            <span class="burger-menu__cont">
+              <span class="burger-menu__line-cont burger-menu__line-cont--down">
+                <!-- before for line -->
+                <span class="burger-menu__line"></span>
+              </span>
+              <span class="burger-menu__line-cont burger-menu__line-cont--none">
+                <!-- before for line -->
+                <span class="burger-menu__line"></span>
+              </span>
+            </span>
+          </label>
+
+          <article class="mobile-menu">
+            <nav class="nav mobile-menu-nav">
+              <ul class="mobile-menu-nav__list">
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">About us</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Our products</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Prices</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Bestsellers</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Reviews</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
         </div>
       </div>
-    </section>
+    </header>
+
+    <main>
+      <section class="banner-section">
+        <div class="container banner__container">
+          <picture
+            class="banner__image-container banner__image-container--first"
+          >
+            <source
+              srcset="./src/images/banner--mobile.png"
+              media="(max-width:767px)"
+            />
+            <source srcset="./src/images/banner2.png" />
+
+            <img
+              class="banner__image banner__image--first"
+              src="./src/images/banner--mobile.png"
+              alt="banner with products"
+            />
+          </picture>
+          <picture
+            class="banner__image-container banner__image-container--second"
+          >
+            <source
+              srcset="./src/images/banner-second--tablet.png"
+              media="(max-width:1439px)" />
+            <source srcset="./src/images/banner1.png" />
+            <img
+              class="banner__image banner__image--second"
+              src="./src/images/banner-second--tablet.png"
+              alt="banner with products"
+          /></picture>
+          <picture
+            class="banner__image-container banner__image-container--third"
+          >
+            <source
+              srcset="./src/images/banner3.png"
+              media="(min-width:1440px)"
+            />
+            <img
+              class="banner__image banner__image--third"
+              src="./src/images/banner3.png"
+              alt="banner with products"
+            />
+          </picture>
+          <div class="banner__wrapper">
+            <h1 class="banner__title">
+              Modern and minimalist furniture for you
+            </h1>
+            <div class="banner__content">
+              <p>
+                Add a touch of elegance to your space with handcrafted furniture
+                pieces
+              </p>
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="banner__content banner__content--tablet">
+          <p>
+            Add a touch of elegance to your space with handcrafted furniture
+            pieces
+          </p>
+          <button>Subscribe</button>
+        </div>
+      </section>
+      <section class="our-products-section">
+        <div class="container our-products__container">
+          <h2 class="our-products__title">OUR PRODUCTS</h2>
+          <div class="our-products__carousel">
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts1.png,
+                  ./src/images/ourproducts1@2x.png 2x
+                "
+                alt="shelf"
+              />
+              <p>Minimalist storage solutions</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts2.png,
+                  ./src/images/ourproducts2@2x.png 2x
+                "
+                alt="sofa"
+              />
+              <p>Handcrafted minimalist seating</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts3.png,
+                  ./src/images/ourproducts3@2x.png 2x
+                "
+                alt="table"
+              />
+              <p>Handcrafted minimalist seating</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts4.png,
+                  ./src/images/ourproducts4@2x.png 2x
+                "
+                alt="chair"
+              />
+              <p>Minimalist seating for every space</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="container container--small form__container">
+          <article class="form__wrapper">
+            <h2 class="form__title">Newsletter</h2>
+            <p>
+              Every week we will send you new designs and information about
+              sales.
+            </p>
+            <form class="form__form-cont">
+              <div class="form__input-cont">
+                <input
+                  id="user-name"
+                  class="form__input"
+                  placeholder="Name"
+                  type="text"
+                  minlength="2"
+                />
+                <label for="user-name">
+                  <svg class="form__icon--error">
+                    <use href="./src/svg/input-error.svg#input-error"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="form__input-cont">
+                <input
+                  id="user-mail"
+                  class="form__input"
+                  placeholder="E-mail"
+                  type="email"
+                  minlength="2"
+                />
+                <label for="user-mail">
+                  <svg class="form__icon--error">
+                    <use href="./src/svg/input-error.svg#input-error"></use>
+                  </svg>
+                </label>
+              </div>
+            </form>
+            <div class="form__checkbox-wrapper">
+              <input class="agree-box" type="checkbox" id="agree-box" />
+              <label class="agree-box__button" for="agree-box">
+                <svg class="agree-box__icon">
+                  <use href="./src/svg/check-mark.svg#check-mark"></use>
+                </svg>
+              </label>
+              <label for="agree-box">
+                <p class="agree-box__text">
+                  Agree to subscribe to the newsletter
+                </p></label
+              >
+            </div>
+            <button>Send</button>
+          </article>
+          <div class="form__photo-container">
+            <picture>
+              <source
+                srcset="./src/images/newsletter--tablet.png"
+                media="(min-width:768px) and (max-width:1440px)"
+              />
+              <img alt="photo of sofa" src="./src/images/newsletter.png" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="#" class="logo-container">
+          <svg class="logo-icon logo-icon--white">
+            <use xlink:href="./src/svg/logo-icon.svg#logo-icon"></use>
+          </svg>
+        </a>
+        <div class="messengers">
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/test.svg#test"></use>
+          </svg>
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/svg3.svg#svg3"></use>
+          </svg>
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/svg2.svg#svg2"></use>
+          </svg>
+        </div>
+        <nav class="footer__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="footer__content" href="">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="">Our products</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="">Prices</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="">Bestsellers</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="">Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <address class="footer_address"> -->
+        <div class="footer__located">
+          <a class="footer__content" href="">Obolonsky Prospect, 14, Kyiv</a>
+          <p class="footer__content">Daily 10:00-21:00</p>
+        </div>
+        <div class="footer__number">
+          <a class="footer__content" href="">+380669384758</a>
+          <a class="footer__content" href="">+380669384758</a>
+          <a class="footer__content" href="">minimal.furniture@gmail.com</a>
+        </div>
+        <!-- </address> -->
+        <div class="footer__sub-title-cont">
+          <p class="footer__content footer__sub-title">
+            By using this website, you agree to the Terms of Service and Privacy
+            Policy
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script
       type="text/javascript"
@@ -86,36 +340,7 @@
       src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
     ></script>
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".our-products__carousel").slick({
-          dots: false,
-          arrows:false,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          responsive: [
-            {
-              breakpoint: 1440,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: false,
-              },
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-              },
-            },
-          ],
-        });
-      });
+    <script src="./js/our-products.js">
     </script>
   </body>
 </html>
