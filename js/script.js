@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".clients-cards-block").slick({
+  $(".clients-cards__block").slick({
     dots: false,
     infinite: false,
     speed: 300,

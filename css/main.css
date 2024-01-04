@@ -137,6 +137,7 @@ p {
 }
 .clients-cards h2 {
   margin: 0 auto;
+  padding-top: 36px;
   width: 233px;
   line-height: 42px;
   font-size: 28px;
@@ -227,5 +228,8 @@ p {
     line-height: 27px;
     font-size: 18px;
     width: 360px;
+  }
+  .clients-cards h2 {
+    padding-top: 60px;
   }
 }

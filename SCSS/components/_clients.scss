@@ -47,6 +47,7 @@
     }
     h2{
         margin: 0 auto;
+        padding-top: 36px;
         width: 233px;
         line-height: 42px;
         font-size: 28px;
@@ -137,6 +138,9 @@
                     }
                 }
             }
+        }
+        h2{
+            padding-top: 60px;
         }
     }
 }
