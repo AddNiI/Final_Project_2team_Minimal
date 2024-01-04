@@ -1,4 +1,45 @@
 .clients-cards{
     background-color: #F7FAFF;
+    height: 374px;
+    &-block{
+        display: flex;
+        &__card{
+            background-color: white;
+            border-radius: 8px;
+            width: 343px;
+            height: 230px;
+            margin-left: 16px;
+            &--id{
+                margin: 24px 0 0 24px;
+                color: #0A224A;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 700;
+                display: flex;
+                &--text{
+                    margin-left: 14px;
+                    h3{
+                        line-height: 32px;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        font-weight: 400;
+                        line-height: 18px; 
+                        font-size: 14px;
+                    }
+                }
+            }
+            &--text{
+                margin: 24px;
+                p{
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    h2{
+        margin-left: 71px;
+    }
 }
           
