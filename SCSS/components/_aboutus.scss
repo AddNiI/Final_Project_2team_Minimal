@@ -1,6 +1,5 @@
 .about {
     width: 375px;
-    display: block;
   &-us {
     width: 375px;
     background-color: #f7faff;
@@ -65,7 +64,6 @@
 @media (min-width: 768px) {
   .about {
     width: 768px;
-    display: block;
     &-us {
         width: 704px;
         margin: 30px auto;
@@ -121,7 +119,6 @@
     .about {
       width: 1320px;
       background-color: white;
-      display: flex;
       &-us {
           height: 500px;
           width: 760px;

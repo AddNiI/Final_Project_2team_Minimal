@@ -89,7 +89,6 @@ p {
 }
 .about {
   width: 375px;
-  display: block;
 }
 .about-us {
   width: 375px;
@@ -154,7 +153,6 @@ p {
 @media (min-width: 768px) {
   .about {
     width: 768px;
-    display: block;
   }
   .about-us {
     width: 704px;
@@ -209,7 +207,6 @@ p {
   .about {
     width: 1320px;
     background-color: white;
-    display: flex;
   }
   .about-us {
     height: 500px;
