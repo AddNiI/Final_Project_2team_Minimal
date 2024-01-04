@@ -90,24 +90,28 @@ p {
 .clients-cards {
   background-color: #F7FAFF;
   height: 374px;
+  font-family: "Roboto", sans-serif;
 }
 .clients-cards-block {
   display: flex;
+  min-width: 0;
 }
 .clients-cards-block__card {
   background-color: white;
   border-radius: 8px;
   width: 343px;
   height: 230px;
-  margin-left: 16px;
+  margin: 30px 16px 36px;
+}
+.clients-cards-block__card img {
+  width: 48px;
 }
 .clients-cards-block__card--id {
   margin: 24px 0 0 24px;
   color: #0A224A;
-  font-family: Roboto;
   font-size: 18px;
-  font-weight: 700;
   display: flex;
+  font-family: "Roboto", sans-serif;
 }
 .clients-cards-block__card--id--text {
   margin-left: 14px;
@@ -115,6 +119,8 @@ p {
 .clients-cards-block__card--id--text h3 {
   line-height: 32px;
   text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
 }
 .clients-cards-block__card--id--text p {
   font-weight: 400;
@@ -127,7 +133,99 @@ p {
 .clients-cards-block__card--text p {
   line-height: 20px;
   font-size: 14px;
+  width: 296px;
 }
 .clients-cards h2 {
-  margin-left: 71px;
+  margin: 0 auto;
+  width: 233px;
+  line-height: 42px;
+  font-size: 28px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.slick-next {
+  width: 0;
+  height: 0;
+  padding: 0;
+}
+
+.slick-prev {
+  width: 0;
+  height: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .clients-cards {
+    height: 466px;
+  }
+  .clients-cards-block {
+    margin-left: 32px;
+  }
+  .clients-cards-block__card {
+    width: 344px;
+    height: 319px;
+    margin: 30px 16px 36px 0;
+  }
+  .clients-cards-block__card img {
+    width: 69px;
+  }
+  .clients-cards-block__card--id {
+    font-size: 20px;
+  }
+  .clients-cards-block__card--id--text {
+    margin-left: 14px;
+  }
+  .clients-cards-block__card--id--text h3 {
+    line-height: 45px;
+  }
+  .clients-cards-block__card--id--text p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .clients-cards-block__card--text {
+    margin-top: 14px;
+  }
+  .clients-cards-block__card--text p {
+    line-height: 27px;
+    font-size: 18px;
+  }
+  .clients-cards h2 {
+    width: 266px;
+    line-height: 45px;
+    font-size: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .clients-cards {
+    height: 501px;
+  }
+  .clients-cards-block {
+    margin-left: 60px;
+  }
+  .clients-cards-block__card {
+    width: 424px;
+    height: 306px;
+    margin: 30px 24px 60px 0;
+  }
+  .clients-cards-block__card--text {
+    margin-top: 16px;
+  }
+  .clients-cards-block__card--text p {
+    line-height: 27px;
+    font-size: 18px;
+    width: 360px;
+  }
 }
