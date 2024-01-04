@@ -365,6 +365,33 @@ p, a {
     display: none;
   }
 }
+.our-products-section {
+  padding-top: 100px;
+}
+.our-products__title {
+  margin-bottom: 31px;
+  text-align: center;
+}
+.our-products__image {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .slick-track {
+    gap: 24px;
+  }
+}
+@media (max-width: 1440px) {
+  .our-products__carousel:hover {
+    cursor: grab;
+  }
+}
 .form__container {
   padding-top: 64px;
   padding-bottom: 64px;

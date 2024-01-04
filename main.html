@@ -9,11 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Minimal</title>
-    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png" >
-    <link rel="apple-touch-icon" href="src/images/favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png" />
+    <link rel="apple-touch-icon" href="src/images/favicon.png" />
   </head>
   <body>
     <header class="header">
@@ -136,7 +141,6 @@
               <button>Subscribe</button>
             </div>
           </div>
-          
         </div>
         <div class="banner__content banner__content--tablet">
           <p>
@@ -146,6 +150,58 @@
           <button>Subscribe</button>
         </div>
       </section>
+      <section class="our-products-section">
+        <div class="container our-products__container">
+          <h2 class="our-products__title">OUR PRODUCTS</h2>
+          <div class="our-products__carousel">
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts1.png,
+                  ./src/images/ourproducts1@2x.png 2x
+                "
+                alt="shelf"
+              />
+              <p>Minimalist storage solutions</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts2.png,
+                  ./src/images/ourproducts2@2x.png 2x
+                "
+                alt="sofa"
+              />
+              <p>Handcrafted minimalist seating</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts3.png,
+                  ./src/images/ourproducts3@2x.png 2x
+                "
+                alt="table"
+              />
+              <p>Handcrafted minimalist seating</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts4.png,
+                  ./src/images/ourproducts4@2x.png 2x
+                "
+                alt="chair"
+              />
+              <p>Minimalist seating for every space</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="form">
         <div class="container container--small form__container">
           <article class="form__wrapper">
@@ -154,7 +210,7 @@
               Every week we will send you new designs and information about
               sales.
             </p>
-            <form class="form__form-cont" >
+            <form class="form__form-cont">
               <div class="form__input-cont">
                 <input
                   id="user-name"
@@ -270,5 +326,21 @@
         </div>
       </div>
     </footer>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
+
+    <script src="./js/our-products.js">
+    </script>
   </body>
 </html>
