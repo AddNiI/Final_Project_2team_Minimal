@@ -207,6 +207,7 @@ p {
   .about {
     width: 1320px;
     background-color: white;
+    display: flex;
   }
   .about-us {
     height: 500px;
