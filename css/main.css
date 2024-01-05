@@ -87,55 +87,55 @@ p {
     padding: 0;
   }
 }
-.clients-cards {
-  background-color: #F7FAFF;
+.clients-reviews {
+  background-color: #f7faff;
   height: 374px;
   font-family: "Roboto", sans-serif;
 }
-.clients-cards-block {
+.clients-reviews__block {
   display: flex;
   min-width: 0;
 }
-.clients-cards-block__card {
+.clients-reviews__card {
   background-color: white;
   border-radius: 8px;
   width: 343px;
   height: 230px;
   margin: 30px 16px 36px;
 }
-.clients-cards-block__card img {
+.clients-reviews__card img {
   width: 48px;
 }
-.clients-cards-block__card--id {
+.clients-reviews__userdata {
   margin: 24px 0 0 24px;
-  color: #0A224A;
+  color: #0a224a;
   font-size: 18px;
   display: flex;
   font-family: "Roboto", sans-serif;
 }
-.clients-cards-block__card--id--text {
+.clients-reviews__textdata {
   margin-left: 14px;
 }
-.clients-cards-block__card--id--text h3 {
+.clients-reviews__textdata h3 {
   line-height: 32px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
 }
-.clients-cards-block__card--id--text p {
+.clients-reviews__textdata p {
   font-weight: 400;
   line-height: 18px;
   font-size: 14px;
 }
-.clients-cards-block__card--text {
+.clients-reviews__comment {
   margin: 24px;
 }
-.clients-cards-block__card--text p {
+.clients-reviews__comment p {
   line-height: 20px;
   font-size: 14px;
   width: 296px;
 }
-.clients-cards h2 {
+.clients-reviews h2 {
   margin: 0 auto;
   padding-top: 36px;
   width: 233px;
@@ -153,83 +153,84 @@ p {
 
 .slick-arrow {
   position: absolute;
-  top: 50%;
 }
 
 .slick-next {
   width: 0;
   height: 0;
   padding: 0;
+  color: none;
 }
 
 .slick-prev {
   width: 0;
   height: 0;
   padding: 0;
+  color: none;
 }
 
 @media (min-width: 768px) {
-  .clients-cards {
+  .clients-reviews {
     height: 466px;
   }
-  .clients-cards-block {
+  .clients-reviews__block {
     margin-left: 32px;
   }
-  .clients-cards-block__card {
+  .clients-reviews__card {
     width: 344px;
     height: 319px;
     margin: 30px 16px 36px 0;
   }
-  .clients-cards-block__card img {
+  .clients-reviews__card img {
     width: 69px;
   }
-  .clients-cards-block__card--id {
+  .clients-reviews__userdata {
     font-size: 20px;
   }
-  .clients-cards-block__card--id--text {
+  .clients-reviews__textdata {
     margin-left: 14px;
   }
-  .clients-cards-block__card--id--text h3 {
+  .clients-reviews__textdata h3 {
     line-height: 45px;
   }
-  .clients-cards-block__card--id--text p {
+  .clients-reviews__textdata p {
     line-height: 24px;
     font-size: 16px;
   }
-  .clients-cards-block__card--text {
+  .clients-reviews__comment {
     margin-top: 14px;
   }
-  .clients-cards-block__card--text p {
+  .clients-reviews__comment p {
     line-height: 27px;
     font-size: 18px;
   }
-  .clients-cards h2 {
+  .clients-reviews h2 {
     width: 266px;
     line-height: 45px;
     font-size: 32px;
   }
 }
 @media (min-width: 1440px) {
-  .clients-cards {
+  .clients-reviews {
     height: 501px;
   }
-  .clients-cards-block {
+  .clients-reviews__block {
     margin-left: 60px;
   }
-  .clients-cards-block__card {
+  .clients-reviews__card {
     width: 424px;
     height: 306px;
     margin: 30px 24px 60px 0;
   }
-  .clients-cards-block__card--text {
+  .clients-reviews__comment {
     margin-top: 16px;
   }
-  .clients-cards-block__card--text p {
+  .clients-reviews__comment p {
     line-height: 27px;
     font-size: 18px;
     width: 360px;
   }
-  .clients-cards h2 {
+  .clients-reviews h2 {
     padding-top: 60px;
   }
 }
