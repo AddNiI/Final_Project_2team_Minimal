@@ -42,11 +42,8 @@
       text-transform: uppercase;
       margin: 30px 0 14px 0;
     }
-    &__senumr {
-      font-size: 50px;
-      line-height: 75px;
-      text-transform: uppercase;
-      margin: 30px 0 14px 0;
+    &__statelemr {
+      width: 170px;
     }
   }
   &-block__img {
@@ -81,19 +78,16 @@
         padding-bottom: 36px;
       }
       &__statelem {
-        width: 170px;
+        margin-right: 33px;
+      }
+      &__statelemr {
+        margin-right: 0;
       }
       &__senum {
-        margin-right: 33px;
+        width: 170px;
       }
       &__setxt {
-        margin-right: 33px;
-      }
-      &__senumr {
-        margin-right: 0;
-      }
-      &__setxtr {
-        margin-right: 0;
+        width: 170px;
       }
     }
     &-block__img {
@@ -129,7 +123,6 @@
         padding-bottom: 34px;
       }
       &__statelem {
-        width: 170px;
         margin-right: 23px;
       }
       &__senum {
@@ -139,11 +132,7 @@
       &__setxt {
         width: 170px;
       }
-      &__senumr {
-        text-transform: uppercase;
-        margin: 30px 28px 0 28px;
-      }
-      &__setxtr {
+      &__statelemr {
         margin-right: 0;
       }
     }
