@@ -13,38 +13,44 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="about">
-      <div class="about-us">
-        <div class="about-us-name">
-          <svg class="about-us-namesvg" width="30" height="2" viewBox="0 0 30 2" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="1" x2="30" y2="1" stroke="#0A224A"/></svg>        
+    <div class="aboutus">
+      <div class="aboutus-block">
+        <div class="aboutus-block__name">
+          <svg class="aboutus-block__svg" width="30" height="2" viewBox="0 0 30 2" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="1" x2="30" y2="1" stroke="#0A224A"/></svg>        
           <p>
             About us
           </p>
         </div>
         <div>
-          <h2 class="about-us-bigtext">Our сraftsmanship: сreating unique handmade furniture</h2>
+          <h2 class="aboutus-block__title">Our сraftsmanship: сreating unique handmade furniture</h2>
         </div>
         <div>
-          <p class="about-us-text">Discover the inspiration behind our modern and minimalist designs, and see how we bring them to life through our skilled craftsmanship.</p>
+          <p class="aboutus-block__slogan">Discover the inspiration behind our modern and minimalist designs, and see how we bring them to life through our skilled craftsmanship.</p>
         </div>
-        <div class="about-us-best">
-          <div class="about-us-best-sub">
-            <p class="about-us-best-subnum">5+</p>
-            <p class="about-us-best-subtxt">Years of experience creating handcrafted furniture</p>
+        <div class="aboutus-block__statistics">
+          <div class="aboutus-block__statelem">
+            <p class="aboutus-block__senum">5+</p>
+            <p class="aboutus-block__setxt">Years of experience creating handcrafted furniture</p>
           </div>
-          <div class="about-us-best-sub">
-            <p class="about-us-best-subnum">100%</p>
-            <p class="about-us-best-subtxt">Sustainably sourced materials used in all of our furniture </p>
+          <div class="aboutus-block__statelem">
+            <p class="aboutus-block__senum">100%</p>
+            <p class="boutus-block__setxt">Sustainably sourced materials used in all of our furniture </p>
           </div>
-          <div class="about-us-best-sub">
-            <p class="about-us-best-subnumr">500+</p>
-            <p class="about-us-best-subtxtr">Unique furniture designs crafted by our skilled artisans</p>
+          <div class="aboutus-block__statelem">
+            <p class="aboutus-block__senumr">500+</p>
+            <p class="aboutus-block__setxtr">Unique furniture designs crafted by our skilled artisans</p>
          </div>
         </div>
       </div>
-      <div class="about-us-img">
-        <img src="./src/images/about.png" alt="sofa">
-      </div>
+      <picture class="aboutus-block__img">
+        <source srcset="./src/images/AU.png" media="(min-width: 1440px)">
+        <source srcset="./src/images/AU_@2x.png 2x" media="(min-width: 1440px)">
+        <source srcset="./src/images/AU_T.png" media="(min-width: 768px)">
+        <source srcset="./src/images/AU_T_@2x.png 2x" media="(min-width: 768px)">
+        <source srcset="./src/images/AU_M.png" media="(min-width: 375px)">
+        <source srcset="./src/images/AU_M_@2x.png 2x" media="(min-width: 375px)">
+        <img src="" alt="erore: image not found by this screen or this browser">
+      </picture>
     </div>
   </body>
 </html>

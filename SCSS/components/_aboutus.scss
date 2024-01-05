@@ -1,6 +1,5 @@
-.about {
-    width: 375px;
-  &-us {
+.aboutus {
+  &-block {
     width: 375px;
     background-color: #f7faff;
     font-family: "Roboto", sans-serif;
@@ -9,165 +8,147 @@
     font-size: 16px;
     line-height: 24px;
     height: 983px;
-    &-name {
+    &__name {
       display: flex;
       width: 134px;
       align-items: center;
       padding: 64px 0 30px 16px;
-      &svg {
-        margin-right: 20px;
-      }
     }
-    &-bigtext {
+    &__svg {
+      margin-right: 20px;
+    }
+    &__title {
       margin: 0 auto;
       width: 343px;
       font-size: 28px;
       line-height: 42px;
     }
-    &-text {
+    &__slogan {
       width: 343px;
       margin: 30px auto 0 auto;
     }
-    &-best {
+    &__statistics {
       margin: 0 auto;
       width: 170px;
       text-align: center;
-      display: block;
       padding-bottom: 64px;
-      &-sub {
-        width: 170px;
-        &num {
-          font-size: 50px;
-          line-height: 75px;
-          text-transform: uppercase;
-          margin: 30px 0 14px 0;
-        }
-        &numr {
-          font-size: 50px;
-          line-height: 75px;
-          text-transform: uppercase;
-          margin: 30px 0 14px 0;
-        }
-      }
     }
-    &-img {
-      position: relative;
-      left: -67px;
-      margin: 0 0 64px 0;
-      img{
-      height: 400px;
-      }
+    &__statelem {
+      width: 170px;
     }
+    &__senum {
+      font-size: 50px;
+      line-height: 75px;
+      text-transform: uppercase;
+      margin: 30px 0 14px 0;
+    }
+    &__senumr {
+      font-size: 50px;
+      line-height: 75px;
+      text-transform: uppercase;
+      margin: 30px 0 14px 0;
+    }
+  }
+  &-block__img {
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: 768px) {
-  .about {
+  .aboutus {
     width: 768px;
-    &-us {
-        width: 704px;
-        margin: 30px auto;
-        font-size: 18px;
-        line-height: 27px;
-        height: 620px;
-      &-name {
+    &-block {
+      width: 704px;
+      margin: 30px auto;
+      font-size: 18px;
+      line-height: 27px;
+      height: 620px;
+      &__name {
         width: 144px;
         padding: 64px 0 30px 16px;
       }
-      &-bigtext {
+      &__title {
         width: 576px;
         font-size: 32px;
         line-height: 45px;
       }
-      &-text {
+      &__slogan {
         width: 576px;
       }
-      &-best {
+      &__statistics {
         width: 576px;
         display: flex;
         padding-bottom: 36px;
-        &-sub {
-            width: 170px;
-          &num {
-            text-transform: uppercase;
-            margin: 30px 33px 14px 0;
-          }
-          &txt{
-              margin-right: 33px;
-          }
-          &numr {
-            text-transform: uppercase;
-            margin: 30px 0 14px 0;
-          }
-          &txtr{
-              margin-right: 0;
-          }
-        }
       }
-      &-img {
-        margin: 0 32px 100px;
-        position: static;
-        img{
-        height: 540px;
-        }
+      &__statelem {
+        width: 170px;
       }
+      &__senum {
+        margin-right: 33px;
+      }
+      &__setxt {
+        margin-right: 33px;
+      }
+      &__senumr {
+        margin-right: 0;
+      }
+      &__setxtr {
+        margin-right: 0;
+      }
+    }
+    &-block__img {
+      margin: 0 32px 100px;
     }
   }
 }
 
 @media (min-width: 1440px) {
-    .about {
-      width: 1320px;
-      background-color: white;
-      display: flex;
-      &-us {
-          height: 500px;
-          width: 760px;
-          margin: 20px 19px;
-          font-size: 18px;
-          line-height: 27px;
-        &-name {
-          width: 200px;
-          padding: 36px 0 30px 69px;
-        }
-        &-bigtext {
-          width: 622px;
-        }
-        &-text {
-          width: 622px;
-        }
-        &-best {
-          width: 622px;
-          display: flex;
-          padding-bottom: 34px;
-          &-sub {
-              width: 170px;
-              margin-right: 23px;
-            &num {
-              text-transform: uppercase;
-              margin: 30px 28px 0 28px;
-            }
-            &txt{
-              width: 170px;
-            }
-            &numr {
-              text-transform: uppercase;
-              margin: 30px 28px 0 28px;
-            }
-            &txtr{
-                margin-right: 0;
-            }
-          }
-        }
-        &-img {
-          margin: 0 32px 100px;
-          position: absolute;
-          left: 805px;
-          /*top: 789px;*/
-          img{
-            height: 540px;
-          }
-        }
+  .aboutus {
+    width: 1320px;
+    background-color: white;
+    display: flex;
+    &-block {
+      height: 500px;
+      width: 760px;
+      margin: 20px auto;
+      font-size: 18px;
+      line-height: 27px;
+      &__name {
+        width: 200px;
+        padding: 36px 0 30px 69px;
+      }
+      &__title {
+        width: 622px;
+      }
+      &__slogan {
+        width: 622px;
+      }
+      &__statistics {
+        width: 622px;
+        display: flex;
+        padding-bottom: 34px;
+      }
+      &__statelem {
+        width: 170px;
+        margin-right: 23px;
+      }
+      &__senum {
+        text-transform: uppercase;
+        margin: 30px 28px 0 28px;
+      }
+      &__setxt {
+        width: 170px;
+      }
+      &__senumr {
+        text-transform: uppercase;
+        margin: 30px 28px 0 28px;
+      }
+      &__setxtr {
+        margin-right: 0;
       }
     }
+    &-block__img {
+      margin: 0 32px 100px;
+    }
   }
+}
