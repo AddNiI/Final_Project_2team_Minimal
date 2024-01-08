@@ -1,6 +1,5 @@
 .aboutus {
   &-block {
-    width: 375px;
     background-color: #f7faff;
     font-family: "Roboto", sans-serif;
     color: #0a224a;
@@ -53,7 +52,6 @@
 
 @media (min-width: 768px) {
   .aboutus {
-    width: 768px;
     &-block {
       width: 704px;
       margin: 30px auto;
@@ -98,7 +96,6 @@
 
 @media (min-width: 1440px) {
   .aboutus {
-    width: 1320px;
     background-color: white;
     display: flex;
     &-block {
