@@ -186,6 +186,7 @@ p {
     margin: 20px auto;
     font-size: 18px;
     line-height: 27px;
+    height: 500px;
   }
   .aboutus-block__name {
     width: 200px;
