@@ -96,10 +96,9 @@ p {
 .beatsellers-block {
   width: 343px;
   margin: 0 auto;
-  color: #0a224a;
+  color: db;
 }
 .beatsellers-block__image {
-  width: 343px;
   margin-bottom: 14px;
   margin-top: 21px;
 }
@@ -110,7 +109,6 @@ p {
   margin-top: 30px;
 }
 .beatsellers-block__simage {
-  width: 343px;
   margin-bottom: 14px;
 }
 
@@ -135,7 +133,6 @@ p {
     margin-top: 32px;
   }
   .beatsellers-block__simage {
-    width: 336px;
     margin-bottom: 15px;
   }
   .beatsellers-block__scardl {
@@ -154,7 +151,6 @@ p {
     margin-top: 30px;
     width: 536px;
     margin-bottom: 15px;
-    height: 489px;
   }
   .beatsellers-block__tcard {
     width: 536px;
@@ -164,9 +160,7 @@ p {
     margin-top: 30px;
   }
   .beatsellers-block__simage {
-    width: 258px;
     margin-bottom: 15px;
-    height: 193px;
   }
   .beatsellers-block__scardl {
     margin-right: 20px;
