@@ -31,12 +31,12 @@
         <!-- display:none-->
         <nav class="nav header__nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="">About us</a></li>
-            <li class="nav__item"><a href="">Our products</a></li>
-            <li class="nav__item"><a href="">Prices</a></li>
-            <li class="nav__item"><a href="">Bestsellers</a></li>
-            <li class="nav__item"><a href="">Reviews</a></li>
-            <li class="nav__item"><a href="">Contacts</a></li>
+            <li class="nav__item"><a href="#about-us">About us</a></li>
+            <li class="nav__item"><a href="#our-products">Our products</a></li>
+            <li class="nav__item"><a href="#prices">Prices</a></li>
+            <li class="nav__item"><a href="#bestsellers">Bestsellers</a></li>
+            <li class="nav__item"><a href="#reviews">Reviews</a></li>
+            <li class="nav__item"><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
         <div class="mobile-menu-button--open">
@@ -62,22 +62,22 @@
             <nav class="nav mobile-menu-nav">
               <ul class="mobile-menu-nav__list">
                 <li class="nav__item">
-                  <a class="mobile-menu-nav__link" href="">About us</a>
+                  <a class="mobile-menu-nav__link" href="#about-us">About us</a>
                 </li>
                 <li class="nav__item">
-                  <a class="mobile-menu-nav__link" href="">Our products</a>
+                  <a class="mobile-menu-nav__link" href="#our-products">Our products</a>
                 </li>
                 <li class="nav__item">
-                  <a class="mobile-menu-nav__link" href="">Prices</a>
+                  <a class="mobile-menu-nav__link" href="#prices">Prices</a>
                 </li>
                 <li class="nav__item">
-                  <a class="mobile-menu-nav__link" href="">Bestsellers</a>
+                  <a class="mobile-menu-nav__link" href="#bestsellers">Bestsellers</a>
                 </li>
                 <li class="nav__item">
-                  <a class="mobile-menu-nav__link" href="">Reviews</a>
+                  <a class="mobile-menu-nav__link" href="#reviews">Reviews</a>
                 </li>
                 <li class="nav__item">
-                  <a class="mobile-menu-nav__link" href="">Contacts</a>
+                  <a class="mobile-menu-nav__link" href="#contacts">Contacts</a>
                 </li>
               </ul>
             </nav>
@@ -138,7 +138,9 @@
                 Add a touch of elegance to your space with handcrafted furniture
                 pieces
               </p>
-              <button>Subscribe</button>
+              <div class="">
+                <button>Subscribe</button>
+              </div>
             </div>
           </div>
         </div>
@@ -147,12 +149,14 @@
             Add a touch of elegance to your space with handcrafted furniture
             pieces
           </p>
-          <button>Subscribe</button>
+          <div class="">
+            <button>Subscribe</button>
+          </div>
         </div>
       </section>
-      <section class="our-products-section">
+      <section class="our-products-section" id="our-products">
         <div class="container our-products__container">
-          <h2 class="our-products__title">OUR PRODUCTS</h2>
+          <h2 class="our-products__title" >OUR PRODUCTS</h2>
           <div class="our-products__carousel">
             <div class="our-products__card">
               <img
@@ -231,7 +235,6 @@
                   class="form__input"
                   placeholder="E-mail"
                   type="email"
-                  minlength="2"
                 />
                 <label for="user-mail">
                   <svg class="form__icon--error">
@@ -239,21 +242,28 @@
                   </svg>
                 </label>
               </div>
+              <div class="form__checkbox-wrapper">
+                <input
+                  class="agree-box"
+                  type="checkbox"
+                  id="agree-box"
+                  required
+                />
+                <label class="agree-box__button" for="agree-box">
+                  <svg class="agree-box__icon">
+                    <use href="./src/svg/check-mark.svg#check-mark"></use>
+                  </svg>
+                </label>
+                <label for="agree-box">
+                  <p class="agree-box__text">
+                    Agree to subscribe to the newsletter
+                  </p></label
+                >
+              </div>
+              <div class="form__button">
+                <button>Send</button>
+              </div>
             </form>
-            <div class="form__checkbox-wrapper">
-              <input class="agree-box" type="checkbox" id="agree-box" />
-              <label class="agree-box__button" for="agree-box">
-                <svg class="agree-box__icon">
-                  <use href="./src/svg/check-mark.svg#check-mark"></use>
-                </svg>
-              </label>
-              <label for="agree-box">
-                <p class="agree-box__text">
-                  Agree to subscribe to the newsletter
-                </p></label
-              >
-            </div>
-            <button>Send</button>
           </article>
           <div class="form__photo-container">
             <picture>
@@ -267,9 +277,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer__container">
-        <a href="#" class="logo-container">
+        <a href="#" class="logo-container" >
           <svg class="logo-icon logo-icon--white">
             <use xlink:href="./src/svg/logo-icon.svg#logo-icon"></use>
           </svg>
@@ -288,22 +298,22 @@
         <nav class="footer__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="footer__content" href="">About us</a>
+              <a class="footer__content" href="#about-us">About us</a>
             </li>
             <li class="nav__item">
-              <a class="footer__content" href="">Our products</a>
+              <a class="footer__content" href="#our-products">Our products</a>
             </li>
             <li class="nav__item">
-              <a class="footer__content" href="">Prices</a>
+              <a class="footer__content" href="#prices">Prices</a>
             </li>
             <li class="nav__item">
-              <a class="footer__content" href="">Bestsellers</a>
+              <a class="footer__content" href="#bestsellers">Bestsellers</a>
             </li>
             <li class="nav__item">
-              <a class="footer__content" href="">Reviews</a>
+              <a class="footer__content" href="#reviews">Reviews</a>
             </li>
             <li class="nav__item">
-              <a class="footer__content" href="">Contacts</a>
+              <a class="footer__content" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -340,7 +350,6 @@
       src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
     ></script>
 
-    <script src="./js/our-products.js">
-    </script>
+    <script src="./js/our-products.js"></script>
   </body>
 </html>
