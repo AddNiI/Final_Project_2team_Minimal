@@ -1,12 +1,12 @@
 .price{
     width: 343px;
     margin: 0 auto;
+    color: $db;
 
     &-card{
         display: flex;
         margin: 30px 0;
         font-family: 'Roboto', sans-serif;
-        color: #0A224A;
         overflow: hidden;
         
         &__cost{
@@ -44,10 +44,6 @@
         right: 0;
         transition: 0.5s;
     }
-
-    hr{
-        color: #0A224A;
-    }
 }
 
 @media(min-width: 768px){
@@ -55,8 +51,6 @@
         width: 704px;
     
         &-card{
-            height: 42px;
-    
             &__name{
                 font-size: 32px;
                 line-height: 45px;
@@ -83,8 +77,6 @@
         width: 1096px;
     
         &-card{
-            height: 42px;
-
             &__cost{
                 width: 1096px;
             }
