@@ -1,6 +1,5 @@
 .clients-reviews {
   background-color: $section-color;
-  height: 374px;
   font-family: "Roboto", sans-serif;
   &__block {
     display: flex;
@@ -10,7 +9,6 @@
     background-color:  $main-color;
     border-radius: 8px;
     width: 343px;
-    height: 230px;
     margin: 30px 16px 36px;
     img {
       width: 48px;
@@ -81,13 +79,11 @@
 
 @media (min-width: 768px) {
   .clients-reviews {
-    height: 466px;
     &__block {
       margin-left: 32px;
     }
     &__card {
       width: 344px;
-      height: 319px;
       margin: 30px 16px 36px 0;
       img {
         width: 69px;
@@ -123,13 +119,11 @@
 
 @media (min-width: 1440px) {
   .clients-reviews {
-    height: 501px;
     &__block {
       margin-left: 60px;
     }
     &__card {
       width: 424px;
-      height: 306px;
       margin: 30px 24px 60px 0;
     }
     &__comment {

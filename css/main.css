@@ -89,7 +89,6 @@ p {
 }
 .clients-reviews {
   background-color: #f7faff;
-  height: 374px;
   font-family: "Roboto", sans-serif;
 }
 .clients-reviews__block {
@@ -100,7 +99,6 @@ p {
   background-color: #fff;
   border-radius: 8px;
   width: 343px;
-  height: 230px;
   margin: 30px 16px 36px;
 }
 .clients-reviews__card img {
@@ -170,15 +168,11 @@ p {
 }
 
 @media (min-width: 768px) {
-  .clients-reviews {
-    height: 466px;
-  }
   .clients-reviews__block {
     margin-left: 32px;
   }
   .clients-reviews__card {
     width: 344px;
-    height: 319px;
     margin: 30px 16px 36px 0;
   }
   .clients-reviews__card img {
@@ -211,15 +205,11 @@ p {
   }
 }
 @media (min-width: 1440px) {
-  .clients-reviews {
-    height: 501px;
-  }
   .clients-reviews__block {
     margin-left: 60px;
   }
   .clients-reviews__card {
     width: 424px;
-    height: 306px;
     margin: 30px 24px 60px 0;
   }
   .clients-reviews__comment {
