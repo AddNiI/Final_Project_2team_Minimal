@@ -88,8 +88,6 @@ p {
   }
 }
 .price {
-  width: 343px;
-  margin: 0 auto;
   color: #0a224a;
 }
 .price-card {
@@ -129,9 +127,6 @@ p {
 }
 
 @media (min-width: 768px) {
-  .price {
-    width: 704px;
-  }
   .price-card__name {
     font-size: 32px;
     line-height: 45px;
@@ -146,13 +141,5 @@ p {
   .price-card__svg {
     margin: 21px 30px 21px 0;
     width: 50px;
-  }
-}
-@media (min-width: 1440px) {
-  .price {
-    width: 1096px;
-  }
-  .price-card__cost {
-    width: 1096px;
   }
 }

@@ -1,6 +1,4 @@
 .price{
-    width: 343px;
-    margin: 0 auto;
     color: $txt-color;
 
     &-card{
@@ -48,8 +46,6 @@
 
 @media(min-width: 768px){
     .price{
-        width: 704px;
-    
         &-card{
             &__name{
                 font-size: 32px;
@@ -67,18 +63,6 @@
             &__svg{
                 margin: 21px 30px 21px 0;
                 width: 50px;
-            }
-        }
-    }
-}
-
-@media(min-width: 1440px){
-    .price{
-        width: 1096px;
-    
-        &-card{
-            &__cost{
-                width: 1096px;
             }
         }
     }
