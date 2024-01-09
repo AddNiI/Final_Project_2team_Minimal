@@ -1,12 +1,11 @@
 .aboutus {
   &-block {
-    background-color: #f7faff;
+    background-color: $llb;
     font-family: "Roboto", sans-serif;
-    color: #0a224a;
+    color: $db;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    height: 983px;
     &__name {
       display: flex;
       width: 134px;
@@ -57,7 +56,6 @@
       margin: 30px auto;
       font-size: 18px;
       line-height: 27px;
-      height: 620px;
       &__name {
         width: 144px;
         padding: 64px 0 30px 16px;
@@ -99,7 +97,6 @@
     background-color: white;
     display: flex;
     &-block {
-      height: 500px;
       width: 760px;
       margin: 20px auto;
       font-size: 18px;
