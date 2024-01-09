@@ -1,5 +1,5 @@
 .clients-reviews {
-  background-color: #f7faff;
+  background-color: $section-color;
   height: 374px;
   font-family: "Roboto", sans-serif;
   &__block {
@@ -7,7 +7,7 @@
     min-width: 0;
   }
   &__card {
-    background-color: white;
+    background-color:  $main-color;
     border-radius: 8px;
     width: 343px;
     height: 230px;
@@ -18,7 +18,7 @@
   }
   &__userdata {
     margin: 24px 0 0 24px;
-    color: #0a224a;
+    color: $txt-color;
     font-size: 18px;
     display: flex;
     font-family: "Roboto", sans-serif;
