@@ -1,119 +1,108 @@
-.beatsellers-name{
+.beatsellers {
+  &-name {
     padding-left: 98px;
     font-size: 28px;
     line-height: 42px;
     width: 179px;
-}
+  }
 
-.beatsellers-block{
-    display: block;
+  &-block {
     width: 343px;
     margin: 0 auto;
+    color: #0a224a;
 
-    &-sub{
-        color: var(--Blue-font, #0A224A);
-        &__image{
-            width: 343px;
-            margin-bottom: 14px;
-            margin-top: 21px;
-        }
-        &__price{
-            font-weight: 700;
-        }
+    &__image {
+      width: 343px;
+      margin-bottom: 14px;
+      margin-top: 21px;
     }
-    &-subsub{
-        display: block;
-        &bl{
-            color: var(--Blue-font, #0A224A);
-            display: block;
-            &ock{     
-                margin-top: 30px;
-                &__image{
-                    width: 343px;
-                    margin-bottom: 14px;
-                }
-                
-                &__price{
-                    font-weight: 700;
-                }
-            }
-            &ockr{
-                margin-right: 0;
-            }
-        }
+
+    &__price {
+      font-weight: 700;
     }
+
+    &__scard {
+      margin-top: 30px;
+    }
+
+    &__simage {
+      width: 343px;
+      margin-bottom: 14px;
+    }
+  }
 }
-
-@media(min-width:768px) {
-    .beatsellers-name{
-        padding-left: 282px;
-        line-height: 45px;
-        font-size: 32px;
+@media (min-width: 768px) {
+  .beatsellers {
+    &-name {
+      padding-left: 282px;
+      line-height: 45px;
+      font-size: 32px;
     }
 
-    .beatsellers-block{
+    &-block {
+      width: 704px;
+
+      &__image {
+        margin-top: 30px;
         width: 704px;
-        display: block;
-    
-        &-sub{
-            &__image{
-                margin-top: 30px;
-                width: 704px;
-                margin-bottom: 15px;
-            }
-        }
-        &-subsub{
-            &bl{
-                display: flex;
-                &ock{     
-                    margin-top: 32px;
-                    &__image{
-                        width: 336px;
-                        margin-bottom: 15px;
-                    }
-                }
-                &ockr{
-                    margin-right: 32px;
-                }
-            }
-        }
+        margin-bottom: 15px;
+      }
+
+      &__tcards {
+        display: flex;
+      }
+
+      &__scard {
+        margin-top: 32px;
+      }
+
+      &__simage {
+        width: 336px;
+        margin-bottom: 15px;
+      }
+
+      &__scardl {
+        margin-right: 32px;
+      }
     }
+  }
 }
 
-@media(min-width:1440px) {
-    .beatsellers-name{
-        padding-left: 618px;
+@media (min-width: 1440px) {
+  .beatsellers {
+    &-name {
+      padding-left: 618px;
     }
 
-    .beatsellers-block{
-        width: 1096px;
-        display: flex;
-    
-        &-sub{
-            &__image{
-                margin-top: 30px;
-                width: 536px;
-                margin-bottom: 15px;
-                height: 489px;
-            }
-        }
-        &-subsub{
-            &bl{
-                width: 536px;
-                display: flex;
-                &ock{     
-                    margin-top: 30px;
-                    &__image{
-                        width: 258px;
-                        margin-bottom: 15px;
-                        height: 193px;
-                    }
-                }    
-                &ockr{
-                    margin-right: 20px;
-                    margin-left: 24px;
-                }
-            }
-        }
+    &-block {
+      width: 1096px;
+      display: flex;
+
+      &__image {
+        margin-top: 30px;
+        width: 536px;
+        margin-bottom: 15px;
+        height: 489px;
+      }
+
+      &__tcards {
+        width: 536px;
+      }
+
+      &__scards {
+        margin-top: 30px;
+      }
+
+      &__simage {
+        width: 258px;
+        margin-bottom: 15px;
+        height: 193px;
+      }
+
+      &__scardl {
+        margin-right: 20px;
+        margin-left: 24px;
+      }
     }
+  }
 }

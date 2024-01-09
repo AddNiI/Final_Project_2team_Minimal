@@ -93,42 +93,25 @@ p {
   line-height: 42px;
   width: 179px;
 }
-
 .beatsellers-block {
-  display: block;
   width: 343px;
   margin: 0 auto;
+  color: #0a224a;
 }
-.beatsellers-block-sub {
-  color: var(--Blue-font, #0A224A);
-}
-.beatsellers-block-sub__image {
+.beatsellers-block__image {
   width: 343px;
   margin-bottom: 14px;
   margin-top: 21px;
 }
-.beatsellers-block-sub__price {
+.beatsellers-block__price {
   font-weight: 700;
 }
-.beatsellers-block-subsub {
-  display: block;
-}
-.beatsellers-block-subsubbl {
-  color: var(--Blue-font, #0A224A);
-  display: block;
-}
-.beatsellers-block-subsubblock {
+.beatsellers-block__scard {
   margin-top: 30px;
 }
-.beatsellers-block-subsubblock__image {
+.beatsellers-block__simage {
   width: 343px;
   margin-bottom: 14px;
-}
-.beatsellers-block-subsubblock__price {
-  font-weight: 700;
-}
-.beatsellers-block-subsubblockr {
-  margin-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -139,24 +122,23 @@ p {
   }
   .beatsellers-block {
     width: 704px;
-    display: block;
   }
-  .beatsellers-block-sub__image {
+  .beatsellers-block__image {
     margin-top: 30px;
     width: 704px;
     margin-bottom: 15px;
   }
-  .beatsellers-block-subsubbl {
+  .beatsellers-block__tcards {
     display: flex;
   }
-  .beatsellers-block-subsubblock {
+  .beatsellers-block__scard {
     margin-top: 32px;
   }
-  .beatsellers-block-subsubblock__image {
+  .beatsellers-block__simage {
     width: 336px;
     margin-bottom: 15px;
   }
-  .beatsellers-block-subsubblockr {
+  .beatsellers-block__scardl {
     margin-right: 32px;
   }
 }
@@ -168,25 +150,24 @@ p {
     width: 1096px;
     display: flex;
   }
-  .beatsellers-block-sub__image {
+  .beatsellers-block__image {
     margin-top: 30px;
     width: 536px;
     margin-bottom: 15px;
     height: 489px;
   }
-  .beatsellers-block-subsubbl {
+  .beatsellers-block__tcards {
     width: 536px;
-    display: flex;
   }
-  .beatsellers-block-subsubblock {
+  .beatsellers-block__scards {
     margin-top: 30px;
   }
-  .beatsellers-block-subsubblock__image {
+  .beatsellers-block__simage {
     width: 258px;
     margin-bottom: 15px;
     height: 193px;
   }
-  .beatsellers-block-subsubblockr {
+  .beatsellers-block__scardl {
     margin-right: 20px;
     margin-left: 24px;
   }
