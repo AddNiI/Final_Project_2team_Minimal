@@ -6,7 +6,7 @@
     min-width: 0;
   }
   &__card {
-    background-color:  $main-color;
+    background-color: $main-color;
     border-radius: 8px;
     width: 343px;
     margin: 30px 16px 36px;
@@ -37,11 +37,9 @@
   }
   &__comment {
     margin: 24px;
-    p {
-      line-height: 20px;
-      font-size: 14px;
-      width: 296px;
-    }
+    line-height: 20px;
+    font-size: 14px;
+    width: 296px;
   }
   h2 {
     margin: 0 auto;
@@ -104,10 +102,8 @@
     }
     &__comment {
       margin-top: 14px;
-      p {
-        line-height: 27px;
-        font-size: 18px;
-      }
+      line-height: 27px;
+      font-size: 18px;
     }
     h2 {
       width: 266px;
@@ -128,11 +124,9 @@
     }
     &__comment {
       margin-top: 16px;
-      p {
-        line-height: 27px;
-        font-size: 18px;
-        width: 360px;
-      }
+      line-height: 27px;
+      font-size: 18px;
+      width: 360px;
     }
     h2 {
       padding-top: 60px;

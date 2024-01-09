@@ -127,8 +127,6 @@ p {
 }
 .clients-reviews__comment {
   margin: 24px;
-}
-.clients-reviews__comment p {
   line-height: 20px;
   font-size: 14px;
   width: 296px;
@@ -193,8 +191,6 @@ p {
   }
   .clients-reviews__comment {
     margin-top: 14px;
-  }
-  .clients-reviews__comment p {
     line-height: 27px;
     font-size: 18px;
   }
@@ -214,8 +210,6 @@ p {
   }
   .clients-reviews__comment {
     margin-top: 16px;
-  }
-  .clients-reviews__comment p {
     line-height: 27px;
     font-size: 18px;
     width: 360px;
