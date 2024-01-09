@@ -1,8 +1,8 @@
 .aboutus {
   &-block {
-    background-color: $llb;
+    background-color: $section-color;
     font-family: "Roboto", sans-serif;
-    color: $db;
+    color: $txt-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -94,9 +94,10 @@
 
 @media (min-width: 1440px) {
   .aboutus {
-    background-color: white;
+    background-color: $main-color;
     display: flex;
     &-block {
+      height: 500px;
       width: 760px;
       margin: 20px auto;
       font-size: 18px;
