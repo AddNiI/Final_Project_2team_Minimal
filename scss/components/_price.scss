@@ -1,34 +1,48 @@
-.price-block{
+.price{
     width: 343px;
     margin: 0 auto;
 
-    &-sub{
+    &-card{
         display: flex;
         margin: 30px 0;
         font-family: 'Roboto', sans-serif;
         color: #0A224A;
+        overflow: hidden;
         
-        &__price{
+        &__cost{
             display: flex;
             flex-direction: row-reverse;
-            /*width: 190px;*/
+            width: 135px;
             font-size: 16px;
             font-weight: 700;
             line-height: 24px;
             margin: 9px 0;
         }
 
-        &__text{
+        &__name{
             font-size: 28px;
             font-weight: 400;
             line-height: 42px;
             width: 153px;
+            position: relative;
+            right: 40px;
         }
         
         &__svg{
             margin: 18px 14px 18px 0;
-            width: 40px;
+            transform: translate(-58px,0);
         }
+
+    }
+
+    &-card:hover svg{
+        transform: translate(0,0);
+        transition: 0.5s;
+    }
+
+    &-card:hover .price-card__name{
+        right: 0;
+        transition: 0.5s;
     }
 
     hr{
@@ -37,19 +51,20 @@
 }
 
 @media(min-width: 768px){
-    .price-block{
+    .price{
         width: 704px;
     
-        &-sub{
+        &-card{
             height: 42px;
     
-            &__text{
+            &__name{
                 font-size: 32px;
                 line-height: 45px;
                 width: 163px;
+                right: 50px;
             }
 
-            &__price{
+            &__cost{
                 font-size: 18px;
                 line-height: 27px;
                 width: 541px;
@@ -64,19 +79,14 @@
 }
 
 @media(min-width: 1440px){
-    .price-block{
+    .price{
         width: 1096px;
     
-        &-sub{
+        &-card{
             height: 42px;
 
-            &__price{
-                width: 933px;
-            }
-            
-            &__svg{
-                margin: 21px 30px 21px 0;
-                width: 50px;
+            &__cost{
+                width: 1096px;
             }
         }
     }
