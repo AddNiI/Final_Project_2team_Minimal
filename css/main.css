@@ -112,6 +112,7 @@ p, a {
 }
 .price {
   color: #0a224a;
+  margin-top: 64px;
 }
 .price-card {
   display: flex;
@@ -150,6 +151,9 @@ p, a {
 }
 
 @media (min-width: 768px) {
+  .price {
+    margin-top: 100px;
+  }
   .price-card__name {
     font-size: 32px;
     line-height: 45px;

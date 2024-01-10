@@ -1,5 +1,6 @@
 .price {
   color: $txt-color;
+  margin-top: 64px;
 
   &-card {
     display: flex;
@@ -45,6 +46,7 @@
 
 @media (min-width: 768px) {
   .price {
+    margin-top: 100px;
     &-card {
       &__name {
         font-size: 32px;
