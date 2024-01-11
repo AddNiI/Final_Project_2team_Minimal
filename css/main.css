@@ -120,11 +120,6 @@ p {
   font-size: 18px;
   font-weight: 700;
 }
-.clients-reviews__textdata p {
-  font-weight: 400;
-  line-height: 18px;
-  font-size: 14px;
-}
 .clients-reviews__comment {
   margin: 24px;
   line-height: 20px;
@@ -196,8 +191,6 @@ p {
   }
   .clients-reviews h2 {
     width: 266px;
-    line-height: 45px;
-    font-size: 32px;
   }
 }
 @media (min-width: 1440px) {
