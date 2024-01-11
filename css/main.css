@@ -115,8 +115,6 @@ p {
 @media (min-width: 768px) {
   .beatsellers-name {
     padding-left: 282px;
-    line-height: 45px;
-    font-size: 32px;
   }
   .beatsellers-block {
     width: 704px;
