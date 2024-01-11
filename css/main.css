@@ -235,7 +235,7 @@ p, a {
 .price-card__cost {
   display: flex;
   flex-direction: row-reverse;
-  width: 135px;
+  width: 1000px;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -275,11 +275,10 @@ p, a {
   .price-card__cost {
     font-size: 18px;
     line-height: 27px;
-    width: 541px;
+    width: 1000px;
   }
   .price-card__svg {
     margin: 21px 30px 21px 0;
-    width: 50px;
   }
 }
 .header {
