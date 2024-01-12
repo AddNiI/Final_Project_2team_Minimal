@@ -1,0 +1,138 @@
+.footer {
+  background-color: $txt-color;
+
+  &__container {
+    padding-top: 36px;
+    padding-bottom: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  &__nav {
+    margin-top: 42px;
+  }
+  &__content {
+    color: $main-color;
+  }
+  &__sub-title {
+    opacity: 0.6;
+    text-align: center;
+    &-cont {
+      margin-top: 64px;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  .nav {
+    &__list {
+      display: grid;
+      gap: 8px;
+    }
+    &__item {
+      color: aqua;
+    }
+  }
+  &__located {
+    display: grid;
+    gap: 8px;
+    margin-top: 36px;
+    grid-column-start: 1;
+  }
+  &__number {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 35px;
+    grid-column-start: 1;
+  }
+}
+.messengers {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  grid-column-start: 2;
+  gap: 16px;
+}
+
+.messengers-icon {
+  width: 28px;
+  height: 28px;
+}
+@media (min-width: 350px) {
+  .messengers {
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    &__container {
+      padding: 48px 32px 36px;
+    }
+    &__nav {
+      margin-top: 0;
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+    &__sub-title {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 1.188px;
+      &-cont {
+        display: grid;
+        justify-items: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    }
+    .nav {
+      &__list {
+        gap: 16px;
+      }
+    }
+  }
+  .messengers {
+    grid-column-start: 3;
+    justify-content: end;
+    &-container {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    &__container {
+      padding-top: 48px;
+
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+    &__number {
+      gap: 24px 87px;
+      grid-row-start: 2;
+      grid-column-start: 2;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: 72px;
+    }
+    .nav {
+      &__list {
+        display: flex;
+        gap: 30px;
+      }
+    }
+    &__number,
+    &__located {
+      margin-top: 24px;
+    }
+    &__sub-title {
+      &-cont {
+        margin-top: 35px;
+      }
+    }
+  }
+  .messengers {
+    gap: 30px;
+  }
+}
