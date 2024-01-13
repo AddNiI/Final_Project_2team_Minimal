@@ -36,7 +36,7 @@ h1 {
 h2 {
   color: #0a224a;
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 45px;
   text-transform: uppercase;
@@ -85,6 +85,7 @@ p, a {
     line-height: 75px;
   }
   h2 {
+    font-size: 32px;
     line-height: 45px;
   }
   h3 {
