@@ -8,16 +8,7 @@ $(document).ready(function () {
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1441,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: false,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 769,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -29,7 +20,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: true
         }
       }
     ]
