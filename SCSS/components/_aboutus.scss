@@ -1,0 +1,131 @@
+.aboutus {
+  &-block {
+    background-color: $section-color;
+    font-family: "Roboto", sans-serif;
+    color: $txt-color;
+    font-weight: 400;
+    &__name {
+      display: flex;
+      width: 134px;
+      align-items: center;
+      padding: 64px 0 30px 16px;
+    }
+    &__svg {
+      margin-right: 20px;
+    }
+    &__title {
+      margin: 0 auto;
+      width: 343px;
+      font-size: 28px;
+      line-height: 42px;
+    }
+    &__slogan {
+      width: 343px;
+      margin: 30px auto 0 auto;
+    }
+    &__statistics {
+      margin: 0 auto;
+      width: 170px;
+      text-align: center;
+      padding-bottom: 64px;
+    }
+    &__statelem {
+      width: 170px;
+    }
+    &__senum {
+      font-size: 50px;
+      line-height: 75px;
+      text-transform: uppercase;
+      margin: 30px 0 14px 0;
+    }
+    &__statelemr {
+      width: 170px;
+    }
+  }
+  &-block__img {
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutus {
+    margin-top: 100px;
+    &-block {
+      width: 704px;
+      margin: 30px auto;
+      &__name {
+        width: 144px;
+        padding: 64px 0 30px 16px;
+      }
+      &__title {
+        width: 576px;
+      }
+      &__slogan {
+        width: 576px;
+      }
+      &__statistics {
+        width: 576px;
+        display: flex;
+        padding-bottom: 36px;
+      }
+      &__statelem {
+        margin-right: 33px;
+      }
+      &__statelemr {
+        margin-right: 0;
+      }
+      &__senum {
+        width: 170px;
+      }
+      &__setxt {
+        width: 170px;
+      }
+    }
+    &-block__img {
+      margin: 0 32px 100px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .aboutus {
+    background-color: $main-color;
+    display: flex;
+    &-block {
+      height: 500px;
+      width: 760px;
+      margin: 20px auto;
+      &__name {
+        width: 200px;
+        padding: 36px 0 30px 69px;
+      }
+      &__title {
+        width: 622px;
+      }
+      &__slogan {
+        width: 622px;
+      }
+      &__statistics {
+        width: 622px;
+        display: flex;
+        padding-bottom: 34px;
+      }
+      &__statelem {
+        margin-right: 23px;
+      }
+      &__senum {
+        text-transform: uppercase;
+        margin: 30px 28px 0 28px;
+      }
+      &__setxt {
+        width: 170px;
+      }
+      &__statelemr {
+        margin-right: 0;
+      }
+    }
+    &-block__img {
+      margin: 0 32px 100px;
+    }
+  }
+}

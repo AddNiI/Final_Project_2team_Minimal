@@ -3,75 +3,460 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Minimal - educational project" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Document</title>
+    <title>Minimal</title>
+    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png" />
+    <link rel="apple-touch-icon" href="src/images/favicon.png" />
   </head>
   <body>
-    <div class="beatsellers" id="beatsellers">
-      <div class="beatsellers-name">
-        <h2>BESTSELLERS</h2>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="logo-container">
+          <svg class="logo-icon">
+            <use xlink:href="./src/svg/logo-icon.svg#logo-icon"></use>
+          </svg>
+        </a>
+        <!-- display:none-->
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#about-us">About us</a></li>
+            <li class="nav__item"><a href="#our-products">Our products</a></li>
+            <li class="nav__item"><a href="#prices">Prices</a></li>
+            <li class="nav__item"><a href="#bestsellers">Bestsellers</a></li>
+            <li class="nav__item"><a href="#reviews">Reviews</a></li>
+            <li class="nav__item"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-button--open">
+          <input
+            class="burger-menu-input"
+            type="checkbox"
+            id="mobile-menu-button--open"
+          />
+          <label class="burger-menu" for="mobile-menu-button--open">
+            <span class="burger-menu__cont">
+              <span class="burger-menu__line-cont burger-menu__line-cont--down">
+                <!-- before for line -->
+                <span class="burger-menu__line"></span>
+              </span>
+              <span class="burger-menu__line-cont burger-menu__line-cont--none">
+                <!-- before for line -->
+                <span class="burger-menu__line"></span>
+              </span>
+            </span>
+          </label>
+
+          <article class="mobile-menu">
+            <nav class="nav mobile-menu-nav">
+              <ul class="mobile-menu-nav__list">
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="#about-us">About us</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="#our-products"
+                    >Our products</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="#prices">Prices</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="#bestsellers"
+                    >Bestsellers</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav__item">
+                  <a class="mobile-menu-nav__link" href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
       </div>
-      <div class="beatsellers-block container--small">
-        <div class="beatsellers-block__bcard">
-          <picture>
-            <source srcset="./src/images/BS_1.png, ./src/images/BS_1_@2x.png 2x" media="(min-width: 1440px)">
-            <source srcset="./src/images/BS_1_T.png, ./src/images/BS_1_T_@2x.png 2x" media="(min-width: 768px)" >
-            <source srcset="./src/images/BS_1_M.png, ./src/images/BS_1_M_@2x.png 2x"media="(min-width: 375px)">
-            <img class="beatsellers-block__image" src="./src/images/BS_1_M.png" alt="erore: image not found by this screen or this browser"/>
+    </header>
+
+    <main>
+      <section class="banner-section">
+        <div class="container banner__container">
+          <picture
+            class="banner__image-container banner__image-container--first"
+          >
+            <source
+              srcset="./src/images/banner--mobile.png ,  ./src/images/banner--mobile@2x.png 2x"
+              media="(max-width:767px)"
+            />
+            <source srcset="./src/images/banner2.png , ./src/images/banner2@2x.png 2x"/>
+
+            <img
+              class="banner__image banner__image--first"
+              srcset="./src/images/banner--mobile.png , ./src/images/banner--mobile@2x.png 2x"
+              alt="banner with products"
+            />
           </picture>
-          <p>The modern platform bed</p>
-          <p class="beatsellers-block__price">750$</p>
+          <picture
+            class="banner__image-container banner__image-container--second"
+          >
+            <source
+              srcset="./src/images/banner-second--tablet.png , ./src/images/banner-second--tablet@2x.png 2x "
+              media="(max-width:1439px)" />
+            <source srcset="./src/images/banner1.png , ./src/images/banner1@2x.png 2x" />
+            <img
+              class="banner__image banner__image--second"
+              src="./src/images/banner-second--tablet.png"
+              alt="banner with products"
+          /></picture>
+          <picture
+            class="banner__image-container banner__image-container--third"
+          >
+            <source
+              srcset="./src/images/banner3.png , ./src/images/banner3@2x.png 2x"
+              media="(min-width:1440px)"
+            />
+            <img
+              class="banner__image banner__image--third"
+              src="./src/images/banner3.png"
+              alt="banner with products"
+            />
+          </picture>
+          <div class="banner__wrapper">
+            <h1 class="banner__title">
+              Modern and minimalist furniture for you
+            </h1>
+            <div class="banner__content">
+              <p>
+                Add a touch of elegance to your space with handcrafted furniture
+                pieces
+              </p>
+              <div class="">
+                <button>Subscribe</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="beatsellers-block__fcard">
-          <div class="beatsellers-block__tcard">
-            <div class="beatsellers-block__scard beatsellers-block__scardl">
-              <picture>
-                <source srcset="./src/images/BS_2.png, ./src/images/BS_2_@2x.png 2x" media="(min-width: 1440px)">
-                <source srcset="./src/images/BS_2_TM.png, ./src/images/BS_2_TM_@2x.png 2x"media="(min-width: 375px)">
-                <img class="beatsellers-block__simage" src="./src/images/BS_2_M.png" alt="erore: image not found by this screen or this browser"/>
-              </picture>
-              <p>The Cozy Lounge Chair</p>
-              <p class="beatsellers-block__price">230$</p>
+        <div class="banner__content banner__content--tablet">
+          <p>
+            Add a touch of elegance to your space with handcrafted furniture
+            pieces
+          </p>
+          <div class="">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </section>
+      <div class="aboutus" id="about-us">
+        <div class="aboutus-block">
+          <div class="aboutus-block__name">
+            <svg class="aboutus-block__svg" width="30" height="2" viewBox="0 0 30 2" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="1" x2="30" y2="1" stroke="#0A224A"/></svg>        
+            <p>
+              About us
+            </p>
+          </div>
+            <h2 class="aboutus-block__title">Our сraftsmanship: сreating unique handmade furniture</h2>
+            <p class="aboutus-block__slogan">Discover the inspiration behind our modern and minimalist designs, and see how we bring them to life through our skilled craftsmanship.</p>
+          <div class="aboutus-block__statistics">
+            <div class="aboutus-block__statelem">
+              <p class="aboutus-block__senum">5+</p>
+              <p class="aboutus-block__setxt">Years of experience creating handcrafted furniture</p>
             </div>
-            <div class="beatsellers-block__scard">
-              <picture class="beatsellers-block__simage">
-                <source srcset="./src/images/BS_3.png, ./src/images/BS_3_@2x.png 2x" media="(min-width: 1440px)">
-                <source srcset="./src/images/BS_3_TM.png, ./src/images/BS_3_TM_@2x.png 2x"media="(min-width: 375px)">
-                <img class="beatsellers-block__simage" src="./src/images/BS_3_M.png" alt="erore: image not found by this screen or this browser"/>
-              </picture>
-              <p>The industrial accent chair</p>
-              <p class="beatsellers-block__price">250$</p>
+            <div class="aboutus-block__statelem">
+              <p class="aboutus-block__senum">100%</p>
+              <p class="boutus-block__setxt">Sustainably sourced materials used in all of our furniture </p>
+            </div>
+            <div class="aboutus-block__statelemr">
+              <p class="aboutus-block__senum">500+</p>
+              <p class="aboutus-block__setxt">Unique furniture designs crafted by our skilled artisans</p>
+           </div>
+          </div>
+        </div>
+        <picture>
+          <source srcset="./src/images/AU.png, ./src/images/AU_@2x.png 2x" media="(min-width: 1440px)">
+          <source srcset="./src/images/AU_T.png" media="(min-width: 768px)">
+          <source srcset="./src/images/AU_T_@2x.png 2x" media="(min-width: 768px)">
+          <source srcset="./src/images/AU_M.png" media="(min-width: 375px)">
+          <source srcset="./src/images/AU_M_@2x.png 2x" media="(min-width: 375px)">
+          <img src="./src/images/AU_M.png" class="aboutus-block__img" alt="erore: image not found by this screen or this browser">
+        </picture>
+      </div>
+      <div class="container container--small price" id="price">
+        <hr />
+        <div class="price-card">
+          <svg
+            class="price-card__svg"
+            height="3"
+            viewBox="0 0 40 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="1.5" x2="40" y2="1.5" stroke="#0A224A" stroke-width="3" />
+          </svg>
+          <p class="price-card__name">Chairs</p>
+          <p class="container--small price-card__cost">from 200₴</p>
+        </div>
+        <hr />
+        <div class="price-card">
+          <svg
+            class="price-card__svg"
+            height="3"
+            viewBox="0 0 40 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="1.5" x2="40" y2="1.5" stroke="#0A224A" stroke-width="3" />
+          </svg>
+          <p class="price-card__name">Tables</p>
+          <p class="container--small price-card__cost">from 250₴</p>
+        </div>
+        <hr />
+        <div class="price-card">
+          <svg
+            class="price-card__svg"
+            height="3"
+            viewBox="0 0 40 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="1.5" x2="40" y2="1.5" stroke="#0A224A" stroke-width="3" />
+          </svg>
+          <p class="price-card__name">Dressers</p>
+          <p class="container--small price-card__cost">from 300₴</p>
+        </div>
+        <hr />
+        <div class="price-card">
+          <svg
+            class="price-card__svg"
+            height="3"
+            viewBox="0 0 40 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="1.5" x2="40" y2="1.5" stroke="#0A224A" stroke-width="3" />
+          </svg>
+          <p class="price-card__name">Sofas</p>
+          <p class="container--small price-card__cost">from 500₴</p>
+        </div>
+        <hr />
+      </div>
+      <section class="our-products-section" id="our-products">
+        <div class="container our-products__container">
+          <h2 class="our-products__title">OUR PRODUCTS</h2>
+          <div class="our-products__carousel">
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts1.png,
+                  ./src/images/ourproducts1@2x.png 2x
+                "
+                alt="shelf"
+              />
+              <p>Minimalist storage solutions</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts2.png,
+                  ./src/images/ourproducts2@2x.png 2x
+                "
+                alt="sofa"
+              />
+              <p>Handcrafted minimalist seating</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts3.png,
+                  ./src/images/ourproducts3@2x.png 2x
+                "
+                alt="table"
+              />
+              <p>Handcrafted minimalist seating</p>
+            </div>
+            <div class="our-products__card">
+              <img
+                class="our-products__image"
+                srcset="
+                  ./src/images/ourproducts4.png,
+                  ./src/images/ourproducts4@2x.png 2x
+                "
+                alt="chair"
+              />
+              <p>Minimalist seating for every space</p>
             </div>
           </div>
-          <div class="beatsellers-block__tcard">
-            <div class="beatsellers-block__scard beatsellers-block__scardl">
-              <picture class="beatsellers-block__simage">
-                <source srcset="./src/images/BS_4.png, ./src/images/BS_4_@2x.png 2x" media="(min-width: 1440px)">
-                <source srcset="./src/images/BS_4_TM.png, ./src/images/BS_4_TM_@2x.png 2x"media="(min-width: 375px)">
-                <img class="beatsellers-block__simage" src="./src/images/BS_4_M.png" alt="erore: image not found by this screen or this browser"/>
-              </picture>
-              <p>The sleek stand</p>
-              <p class="beatsellers-block__price">300$</p>
-            </div>
-            <div class="beatsellers-block__scard">
-              <picture class="beatsellers-block__simage">
-                <source srcset="./src/images/BS_5.png, ./src/images/BS_5_@2x.png 2x" media="(min-width: 1440px)">
-                <source srcset="./src/images/BS_5_TM.png, ./src/images/BS_5_TM_@2x.png 2x"media="(min-width: 375px)">
-                <img class="beatsellers-block__simage" src="./src/images/BS_5_M.png" alt="erore: image not found by this screen or this browser"/>
-              </picture>
-              <p>The minimalist sofa</p>
-              <p class="beatsellers-block__price">650$</p>
-            </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="container container--small form__container">
+          <article class="form__wrapper">
+            <h2 class="form__title">Newsletter</h2>
+            <p>
+              Every week we will send you new designs and information about
+              sales.
+            </p>
+            <form class="form__form-cont">
+              <div class="form__input-cont">
+                <input
+                  id="user-name"
+                  class="form__input"
+                  placeholder="Name"
+                  type="text"
+                  minlength="2"
+                />
+                <label for="user-name">
+                  <svg class="form__icon--error">
+                    <use href="./src/svg/input-error.svg#input-error"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="form__input-cont">
+                <input
+                  id="user-mail"
+                  class="form__input"
+                  placeholder="E-mail"
+                  type="email"
+                />
+                <label for="user-mail">
+                  <svg class="form__icon--error">
+                    <use href="./src/svg/input-error.svg#input-error"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="form__checkbox-wrapper">
+                <input
+                  class="agree-box"
+                  type="checkbox"
+                  id="agree-box"
+                  required
+                />
+                <label class="agree-box__button" for="agree-box">
+                  <svg class="agree-box__icon">
+                    <use href="./src/svg/check-mark.svg#check-mark"></use>
+                  </svg>
+                </label>
+                <label for="agree-box">
+                  <p class="agree-box__text">
+                    Agree to subscribe to the newsletter
+                  </p></label
+                >
+              </div>
+              <div class="form__button">
+                <button>Send</button>
+              </div>
+            </form>
+          </article>
+          <div class="form__photo-container">
+            <picture>
+              <source
+                srcset="
+                  ./src/images/newsletter--tablet.png,
+                  ./src/images/newsletter--tablet@2x.png 2x
+                "
+                media="(min-width:768px) and (max-width:1440px)"
+              />
+              <img
+                alt="photo of sofa"
+                srcset="
+                  ./src/images/newsletter.png,
+                  ./src/images/newsletter@2x.png 2x
+                "
+              />
+            </picture>
           </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <a href="#" class="logo-container">
+          <svg class="logo-icon logo-icon--white">
+            <use xlink:href="./src/svg/logo-icon.svg#logo-icon"></use>
+          </svg>
+        </a>
+        <div class="messengers">
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/test.svg#test"></use>
+          </svg>
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/svg3.svg#svg3"></use>
+          </svg>
+          <svg class="messengers-icon">
+            <use xlink:href="./src/svg/svg2.svg#svg2"></use>
+          </svg>
+        </div>
+        <nav class="footer__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="footer__content" href="#about-us">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="#our-products">Our products</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="#prices">Prices</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="#bestsellers">Bestsellers</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a class="footer__content" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <address class="footer_address"> -->
+        <div class="footer__located">
+          <a class="footer__content" href="">Obolonsky Prospect, 14, Kyiv</a>
+          <p class="footer__content">Daily 10:00-21:00</p>
+        </div>
+        <div class="footer__number">
+          <a class="footer__content" href="">+380669384758</a>
+          <a class="footer__content" href="">+380669384758</a>
+          <a class="footer__content" href="">minimal.furniture@gmail.com</a>
+        </div>
+        <!-- </address> -->
+        <div class="footer__sub-title-cont">
+          <p class="footer__content footer__sub-title">
+            By using this website, you agree to the Terms of Service and Privacy
+            Policy
+          </p>
         </div>
       </div>
-    </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
+
+    <script src="./js/our-products.js"></script>
   </body>
 </html>
