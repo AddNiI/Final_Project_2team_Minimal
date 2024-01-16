@@ -1,13 +1,14 @@
 .beatsellers {
+  width: 343px;
+  margin: 64px auto;
   &-name {
-    margin: 0 auto;
+    margin: 0 auto ;
     font-size: 28px;
     line-height: 42px;
     width: 179px;
   }
 
   &-block {
-    margin: 0 auto;
     color: $txt-color;
 
     &__image {
@@ -29,6 +30,9 @@
   }
 }
 @media (min-width: 768px) {
+  .beatsellers {
+    margin: 100px auto;
+    width: 704px;
     &-block {
       &__image {
         margin-top: 30px;
@@ -53,9 +57,11 @@
       }
     }
   }
+}
 
 @media (min-width: 1440px) {
   .beatsellers {
+    width: 1096px;
     &-block {
       display: flex;
 
