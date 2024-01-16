@@ -30,8 +30,6 @@
 }
 @media (min-width: 768px) {
     &-block {
-      width: 704px;
-
       &__image {
         margin-top: 30px;
         width: 704px;
@@ -59,7 +57,6 @@
 @media (min-width: 1440px) {
   .beatsellers {
     &-block {
-      width: 1096px;
       display: flex;
 
       &__image {
