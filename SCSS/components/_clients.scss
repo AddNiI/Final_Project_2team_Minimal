@@ -44,22 +44,23 @@
     font-size: 28px;
   }
 }
-
-.slick-track {
-  display: flex;
-  gap: 0 !important;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-arrow {
-  position: absolute;
-}
-
-.slick-slide {
-  height: auto !important;
+.clients-reviews{
+  .slick-track {
+    display: flex;
+    gap: 0!important;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .slick-arrow {
+    position: absolute;
+  }
+  
+  .slick-slide {
+    height: auto!important;
+  }
 }
 
 @media (min-width: 768px) {

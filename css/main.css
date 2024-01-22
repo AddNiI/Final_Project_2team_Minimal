@@ -425,20 +425,17 @@ p, a {
   font-size: 28px;
 }
 
-.slick-track {
+.clients-reviews .slick-track {
   display: flex;
   gap: 0 !important;
 }
-
-.slick-list {
+.clients-reviews .slick-list {
   overflow: hidden;
 }
-
-.slick-arrow {
+.clients-reviews .slick-arrow {
   position: absolute;
 }
-
-.slick-slide {
+.clients-reviews .slick-slide {
   height: auto !important;
 }
 
