@@ -302,7 +302,7 @@ p, a {
 }
 .beatsellers {
   width: 343px;
-  margin: 64px auto;
+  margin: 0 auto;
 }
 .beatsellers-name {
   margin: 0 auto;
@@ -311,6 +311,7 @@ p, a {
   width: 179px;
 }
 .beatsellers-block {
+  margin: 0 auto;
   color: #0a224a;
 }
 .beatsellers-block__image {
@@ -865,6 +866,10 @@ p, a {
 }
 .agree-box__text {
   color: #7a7a7a;
+  font-family: "Roboto", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @media (min-width: 768px) {
@@ -878,6 +883,10 @@ p, a {
   .form__photo-container {
     max-width: 100%;
     margin-top: 64px;
+  }
+  .agree-box__text {
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 @media (min-width: 1440px) {
