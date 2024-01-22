@@ -757,8 +757,7 @@ p, a {
   width: 100%;
   margin-bottom: 15px;
 }
-
-.slick-track {
+.our-products .slick-track {
   display: flex;
   gap: 16px;
 }
