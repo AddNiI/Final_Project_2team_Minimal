@@ -481,8 +481,6 @@ p, a {
   }
   .clients-reviews__comment {
     margin-top: 16px;
-    line-height: 27px;
-    font-size: 18px;
     width: 360px;
   }
   .clients-reviews h2 {
@@ -757,8 +755,8 @@ p, a {
 }
 
 .slick-track {
-  gap: 0;
   display: flex;
+  gap: 0;
 }
 
 @media (min-width: 768px) {
