@@ -58,6 +58,10 @@
   position: absolute;
 }
 
+.slick-slide {
+  height: auto !important;
+}
+
 @media (min-width: 768px) {
   .clients-reviews {
     &__block {

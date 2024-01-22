@@ -425,19 +425,6 @@ p, a {
   font-size: 28px;
 }
 
-.slick-track {
-  display: flex;
-  gap: 0 !important;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-arrow {
-  position: absolute;
-}
-
 @media (min-width: 768px) {
   .clients-reviews__block {
     margin-left: 32px;
@@ -756,7 +743,7 @@ p, a {
 
 .slick-track {
   display: flex;
-  gap: 0;
+  gap: 16px;
 }
 
 @media (min-width: 768px) {
@@ -1025,4 +1012,21 @@ p, a {
   .messengers {
     gap: 30px;
   }
+}
+
+.slick-track {
+  display: flex;
+  gap: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+}
+
+.slick-slide {
+  height: auto !important;
 }
