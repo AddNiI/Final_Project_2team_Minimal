@@ -268,7 +268,7 @@ p, a {
 }
 .price-card__svg {
   margin: 18px 14px 18px 0;
-  width: 40px;
+  width: 193.4px;
   transform: translate(-58px, 0);
 }
 .price-card:hover svg {
@@ -297,7 +297,7 @@ p, a {
   }
   .price-card__svg {
     margin: 21px 30px 21px 0;
-    width: 50px;
+    width: 93.8px;
   }
 }
 .beatsellers {
@@ -423,6 +423,23 @@ p, a {
   width: 233px;
   line-height: 42px;
   font-size: 28px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 0 !important;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+}
+
+.slick-slide {
+  height: auto !important;
 }
 
 @media (min-width: 768px) {
@@ -1012,21 +1029,4 @@ p, a {
   .messengers {
     gap: 30px;
   }
-}
-
-.slick-track {
-  display: flex;
-  gap: 0;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-arrow {
-  position: absolute;
-}
-
-.slick-slide {
-  height: auto !important;
 }
