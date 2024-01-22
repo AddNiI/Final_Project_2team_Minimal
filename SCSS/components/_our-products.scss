@@ -1,5 +1,4 @@
 .our-products {
-
   &-section {
     padding-top: 100px;
   }
@@ -14,18 +13,19 @@
   .slick-track {
     display: flex;
     gap: 16px;
-  
   }
 }
-
 
 @media (min-width: 768px) {
-  .slick-track {
-    gap: 24px;
+  .our-products {
+    .slick-track {
+      display: flex ;
+      gap: 24px;
+    }
   }
 }
-@media (max-width:1440px) {
-  .our-products__carousel:hover{
+@media (max-width: 1440px) {
+  .our-products__carousel:hover {
     cursor: grab;
   }
 }

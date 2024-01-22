@@ -760,7 +760,8 @@ p, a {
 }
 
 @media (min-width: 768px) {
-  .slick-track {
+  .our-products .slick-track {
+    display: flex;
     gap: 24px;
   }
 }
