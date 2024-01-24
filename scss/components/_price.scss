@@ -7,12 +7,13 @@
     margin: 30px 0;
     font-family: "Roboto", sans-serif;
     overflow: hidden;
+    justify-content: space-between;
     
 
     &__cost {
       display: flex;
       flex-direction: row-reverse;
-      width: 1000px;
+      width: 77px;
       font-size: 16px;
       font-weight: 700;
       line-height: 24px;
@@ -20,29 +21,24 @@
     }
 
     &__name {
+      display: flex;
       font-size: 28px;
       font-weight: 400;
       line-height: 42px;
-      width: 153px;
+      width: 189px;
       position: relative;
-      right: 40px;
+      right: 64px;
     }
 
     &__svg {
       margin: 18px 14px 18px 0;
-      width: 193.4px;
-      transform: translate(-58px, 0);
     }
   }
 
-  &-card:hover svg {
-    transform: translate(0, 0);
-    transition: 0.5s;
-  }
-
   &-card:hover .price-card__name {
-    right: 0;
+    right: 10px;
     transition: 0.5s;
+    transition-timing-function: ease-out;
   }
 }
 
@@ -53,20 +49,23 @@
       &__name {
         font-size: 32px;
         line-height: 45px;
-        width: 163px;
-        right: 50px;
+        width: 213px;
+        right: 80px;
       }
 
       &__cost {
         font-size: 18px;
         line-height: 27px;
-        width: 1000px;
+        width: 86px;
       }
 
       &__svg {
         margin: 21px 30px 21px 0;
-        width: 93.8px;
       }
+    }
+
+    &-card:hover .price-card__name {
+      right: 0;
     }
   }
 }
