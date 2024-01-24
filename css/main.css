@@ -745,6 +745,10 @@ p, a {
 .our-products-section {
   padding-top: 100px;
 }
+.our-products-section .slick-track {
+  display: flex;
+  gap: 16px;
+}
 .our-products__title {
   margin-bottom: 31px;
   text-align: center;
@@ -754,13 +758,8 @@ p, a {
   margin-bottom: 15px;
 }
 
-.slick-track {
-  display: flex;
-  gap: 16px;
-}
-
 @media (min-width: 768px) {
-  .slick-track {
+  .our-products-section .slick-track {
     gap: 24px;
   }
 }
