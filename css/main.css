@@ -295,6 +295,7 @@ p, a {
   }
   .price-card__svg {
     margin: 21px 30px 21px 0;
+    width: 50px !important;
   }
   .price-card:hover .price-card__name {
     right: 0;
