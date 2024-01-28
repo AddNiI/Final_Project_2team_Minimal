@@ -269,6 +269,7 @@ p, a {
   right: 64px;
 }
 .price-card__svg {
+  width: 50px;
   margin: 18px 14px 18px 0;
 }
 .price-card:hover .price-card__name {
