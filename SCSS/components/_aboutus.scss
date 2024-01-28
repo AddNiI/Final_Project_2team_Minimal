@@ -44,6 +44,7 @@
   }
   &-block__img {
     margin-bottom: 64px;
+    width: 100vw;
   }
 }
 
@@ -83,6 +84,7 @@
     }
     &-block__img {
       margin: 0 32px 100px;
+      width: calc(100% - 64px);
     }
   }
 }
@@ -126,6 +128,7 @@
     }
     &-block__img {
       margin: 0 32px 100px;
+      width: auto;
     }
   }
 }

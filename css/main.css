@@ -156,6 +156,7 @@ p, a {
 }
 .aboutus-block__img {
   margin-bottom: 64px;
+  width: 100vw;
 }
 
 @media (min-width: 768px) {
@@ -195,6 +196,7 @@ p, a {
   }
   .aboutus-block__img {
     margin: 0 32px 100px;
+    width: calc(100% - 64px);
   }
 }
 @media (min-width: 1440px) {
@@ -237,6 +239,7 @@ p, a {
   }
   .aboutus-block__img {
     margin: 0 32px 100px;
+    width: auto;
   }
 }
 .price {
