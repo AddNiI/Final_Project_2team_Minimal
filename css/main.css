@@ -398,6 +398,7 @@ p, a {
   background-color: #fff;
   border-radius: 8px;
   margin: 30px 16px 36px;
+  width: calc(100% - 16px) !important;
 }
 .clients-reviews__card img {
   width: 48px;
@@ -452,6 +453,7 @@ p, a {
   }
   .clients-reviews__card {
     margin: 30px 16px 36px 0;
+    width: calc(50% - 16px) !important;
   }
   .clients-reviews__card img {
     width: 69px;
@@ -485,6 +487,7 @@ p, a {
   }
   .clients-reviews__card {
     margin: 30px 24px 60px 0;
+    width: calc(33% - 24px) !important;
   }
   .clients-reviews__comment {
     margin-top: 16px;
