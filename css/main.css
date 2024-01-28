@@ -480,7 +480,8 @@ p, a {
 }
 @media (min-width: 1440px) {
   .clients-reviews__block {
-    margin-left: 60px;
+    margin: 0 auto;
+    width: 1296px;
   }
   .clients-reviews__card {
     margin: 30px 24px 60px 0;
