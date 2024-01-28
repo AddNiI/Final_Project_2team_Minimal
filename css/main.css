@@ -261,12 +261,15 @@ p, a {
 }
 .price-card__name {
   display: flex;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 42px;
   width: 189px;
   position: relative;
   right: 64px;
+}
+.price-card__name p {
+  width: 125px;
+  line-height: 42px;
+  font-weight: 400;
+  font-size: 28px;
 }
 .price-card__svg {
   width: 50px;
@@ -283,10 +286,12 @@ p, a {
     margin-top: 100px;
   }
   .price-card__name {
-    font-size: 32px;
-    line-height: 45px;
     width: 213px;
     right: 80px;
+  }
+  .price-card__name p {
+    font-size: 32px;
+    line-height: 45px;
   }
   .price-card__cost {
     font-size: 18px;

@@ -22,12 +22,15 @@
 
     &__name {
       display: flex;
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 42px;
       width: 189px;
       position: relative;
       right: 64px;
+      p{
+        width: 125px;
+        line-height: 42px;
+        font-weight: 400;
+        font-size: 28px;
+      }
     }
 
     &__svg {
@@ -47,11 +50,13 @@
   .price {
     margin-top: 100px;
     &-card {
-      &__name {
-        font-size: 32px;
-        line-height: 45px;
+      &__name{
         width: 213px;
         right: 80px;
+        p{
+          font-size: 32px;
+          line-height: 45px;
+        }
       }
 
       &__cost {
