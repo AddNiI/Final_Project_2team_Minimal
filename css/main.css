@@ -76,6 +76,10 @@ p, a {
   fill: #fff;
 }
 
+body:has(.burger-menu-input:checked) {
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 32px;
